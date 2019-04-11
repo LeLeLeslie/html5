@@ -327,7 +327,6 @@ aside{
             &.up span{
                 background: url(//img.yaofang.cn/pc/fold_icon.jpg?v=201701) no-repeat right top;
             }
-        }
         dd{
             padding-left:40px;
             border-left:1px solid #ccc;
@@ -376,10 +375,63 @@ aside{
 section{
     width: 1000px;
     .classifySelect{
+        margin-bottom:40px;
         .selectTitle{
             background: #F7F7F7;
             padding-left: 20px;
             b,span{display:inline-block;line-height:50px;}
+        }
+        .selectList{
+            dl{
+                position: relative;
+                border:1px solid #ccc;
+                margin-top:-1px;
+                font-size:12px;
+                // overflow:hidden;
+                &:first-child{
+                    height: 180px;
+                }
+                &:nth-child(2){
+                    height: 240px;
+                }
+            }
+            dt{
+                width: 100%;
+                // height:60px;
+                line-height: 60px;
+                padding-left:20px;
+                // position: absolute;
+            }
+            dd{
+                position: absolute;
+                left:80px;
+                top:0px;
+                // min-height:60px;
+                // line-height: 60px;
+                ul{
+                   &>li{
+                        float: left;
+                        margin-right:30px;
+                        color:#0C69AE;
+                        line-height: 60px;
+                    }
+                }
+                
+                // border:1px solid #ccc;
+                // width: 100%;
+                // &.list_1{top:0px;}
+                // &.list_2{top:60px;}
+                // &.list_3{top:120px;}
+            }
+            .highRed{color:red;}
+            
+        }
+    }
+    .classifySort{
+        border:1px solid #ccc;
+        span{
+            height: 60px;
+            display: inline-block;
         }
     }
 }
