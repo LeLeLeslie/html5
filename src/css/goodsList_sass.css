@@ -374,6 +374,10 @@ aside .classifyFolder dt.up span {
   background: url(//img.yaofang.cn/pc/fold_icon.jpg?v=201701) no-repeat right top;
 }
 
+aside .classifyFolder dt.up dd a {
+  color: red;
+}
+
 aside .classifyFolder dd {
   padding-left: 40px;
   border-left: 1px solid #ccc;
@@ -437,6 +441,10 @@ section {
   width: 1000px;
 }
 
+section .classifySelect {
+  margin-bottom: 40px;
+}
+
 section .classifySelect .selectTitle {
   background: #F7F7F7;
   padding-left: 20px;
@@ -445,4 +453,42 @@ section .classifySelect .selectTitle {
 section .classifySelect .selectTitle b, section .classifySelect .selectTitle span {
   display: inline-block;
   line-height: 50px;
+}
+
+section .classifySelect .selectList dl {
+  position: relative;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+  font-size: 12px;
+}
+
+section .classifySelect .selectList dl:first-child {
+  height: 180px;
+}
+
+section .classifySelect .selectList dl:nth-child(2) {
+  height: 240px;
+}
+
+section .classifySelect .selectList dt {
+  width: 100%;
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+section .classifySelect .selectList dd {
+  position: absolute;
+  left: 80px;
+  top: 0px;
+}
+
+section .classifySelect .selectList dd ul > li {
+  float: left;
+  margin-right: 30px;
+  color: #0C69AE;
+  line-height: 60px;
+}
+
+section .classifySelect .selectList .highRed {
+  color: red;
 }
