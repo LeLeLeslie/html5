@@ -1,0 +1,261 @@
+/*优惠券样式*/
+main{background: #F7F7F7;}
+.coupon{
+    padding-bottom:20px;
+    border-bottom: 2px solid #ccc;
+    img{
+        width: 220px;
+        margin:20px 15px;
+    }
+    img:first-child{
+        width: 180px;
+    }
+}
+.medical{
+    overflow: hidden;
+    .yao{
+        width: 33.33%;
+        background: #F7F7F7;
+        padding-left:55px;
+        line-height: 55px;
+        i{
+            font-size: 30px;
+            margin-right: 12px;
+        }
+        p{
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        span{
+            color:#A5A5A5;
+            font-family: "楷体";
+        }
+    }
+    .hoverArea{
+        position: relative;
+        width: 100%;
+        height: 360px;
+        overflow-y: hidden;
+        background: #fff;
+        // border:1px solid #ccc;
+        // background: pink;
+        ul{
+            position: absolute;
+            display: none;
+            div{
+                width: 206px;
+                height: 206px;
+            }
+        }
+        ul:first-child{
+            display: block;
+        }
+        li{
+            width: 20%;
+            float: left;
+            padding:20px;
+            p{
+                padding:10px;
+            }
+        }
+        img{
+            width: 100%;
+            margin-bottom:10px;
+            // height: 200px;
+        }
+    }
+    .highWhite{
+        background: #fff;
+    }
+}
+#medicalType{
+    padding-top: 30px;
+    width: 100%;
+    background: #F8F8F8;
+    .medicalType{
+        background: #fff;
+        &>div{
+            margin-bottom:42px;
+        }
+        .banner_shop{
+            img{width: 100%;}
+        }
+    }
+    aside{
+        width: 195px;
+        h4{
+            height: 55px;
+            line-height: 55px;
+            text-align: center;
+            font-size: 24px;
+            color:#fff;
+        }
+        .use{li{border:1px solid #ccc;}}
+    }
+    .floorOne h4{background: #63C19F;}
+    .floorTwo h4{background: #FB375B;}
+    .floorThree .brandName{padding-left: 350px;}
+    .floorThree h4{background: #373CFA;}
+    .floorFour h4{background: #FB9437;}
+    .floorFive h4{color:#000;}
+    // .floorFive h4{background: #B06402;}
+    .floorOne .goods_1 img{height: 150px;}
+    .floorOne .goods_2 li:first-child img{height: 100px;}
+    .floorFive {
+        .pic,.brandIMG{width: 500px;}
+        .use{
+            background: #B06402;
+            border:2px solid #B06402;
+            li{border:none;color:#fff;}
+        }
+        .brandName{padding-bottom:1px;border-bottom:2px solid #B06402;}
+        .goods_1{
+            margin-bottom:20px;
+            li{
+                height:220px;
+                // border:1px solid #ccc;
+                width: 120px;
+            }
+            img{width: 120px;margin-bottom:20px;}
+            div{
+                width: 120px;
+                height: 150px;
+                // border:1px solid #ccc;
+            }
+        }
+        .goods_2{
+            li{height:180px;width: 120px;margin:0px 18px;}
+            div{
+                width: 120px;
+                height: 120px;
+                // border:1px solid #ccc;
+            }
+            img{width: 120px;}
+            p{margin-bottom:10px;}
+        }
+    }
+    section{
+        .brandName{
+            width: 100%;
+            padding-left: 375px;
+            border-bottom:2px solid #76C5A1;
+        }
+        .pic{
+            width: 605px;
+            overflow: hidden;
+            ul{
+                width: 1210px;
+                li{float: left;}
+            }
+        }
+        // .floorFive .brandIMG{width: 500px;}
+        .goods_1{
+            // width: 350px;
+            padding-top:20px;
+            li{height:280px;width: 160px;margin:0px 18px;}//border:1px solid #ccc;
+            div{
+                width: 160px;
+                height: 200px;
+                // border:1px solid #ccc;
+            }
+            img{width: 160px;margin-bottom:20px;}
+            p{margin-bottom:10px;}
+        }
+        .goods_2{
+            li{
+                width:200px;
+                text-align: center;
+                // border:1px solid #ccc;
+                // &:nth-child(3){
+                    // img{height: 45px;}
+                // }
+                text-align: center;
+            }
+            div{
+                width: 200px;
+                height: 150px;
+                text-align: center;
+                // border:1px solid #ccc;
+            }
+            img{
+                width: 100px;
+                // margin-top: -30px;
+                margin-bottom:20px;
+            }
+            p{
+                margin-bottom:10px;
+            }
+        }
+        
+    }
+}
+/*5楼以下*/
+/*6楼*/
+
+#report{}
+.show{
+    width: 910px;
+    // border:1px solid #ccc;
+    .titleArea{
+        width: 100%;
+        height: 50px;
+        border-bottom:1px solid #4E71AC;
+        a{
+            float: left;
+            height: 51px;
+            line-height: 50px;
+            width: 120px;
+            text-align: center;
+            // background: #373CFA
+        }
+    }
+    .showArea{
+        width: 100%;
+        background: #fff;
+        height: 250px;
+        overflow: hidden;
+        border:1px solid #ccc;
+        border-top:none;
+        // position: relative;
+        img{width: 10%;height: 100px;}
+        .rate{width: 80%;height: 100px;font-size: 12px;line-height:25px;padding-left:20px;h4{font-size: 16px;font-weight: 600;line-height: 30px;}}
+        .ulList{font-size: 12px;line-height:30px;&>ul{margin:20px 20px;margin-right: 70px;}a{color:#4095D5}}
+        &>div{
+            // border:1px solid #ccc;
+            // position: absolute;
+        }
+    }
+}
+.report{
+    width: 290px;
+    margin-bottom:50px;
+    border:1px solid #ccc;
+    h4,a{line-height: 50px;margin:0px 12px;}
+    h4{color:#616161;font-weight: 600;}
+}
+.reportPic{
+    width: 290px;
+    text-align: center;
+    position: relative;
+    ul{
+        width: 756px;
+        li{float:left;}
+        img{height: 170px;width: 255px;}
+    }
+    h5{
+        margin-top:-20px;
+        font-size: 16px;
+        position: absolute;
+        left:28px;
+        z-index: 300;
+        color:#fff;
+    }
+}
+.texts{
+    font-size: 12px;
+    line-height: 25px;
+    padding-left:18px;
+}
+.webList{
+    li{float:left;width: 5.26%;font-size: 12px;}
+}

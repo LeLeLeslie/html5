@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>myCarousel</title>
+    <!-- <link rel="stylesheet" type="text/css" href="carousel_leicc.css" /> -->
+    <style type="text/css">
+        .carouselBox{
+            position:relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .carouselBox ul{
+            position:absolute;
+            margin: 0;
+            padding: 0;
+            /*top:-300px;*/
+        }
+        .fade li{
+            position:absolute;
+            margin: 0;
+            padding: 0;
+        }
+        .horizontal li{
+            float:left;
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            margin: 0;
+            padding: 0;
+        }
+        .carouselBox .faded li{position:absolute;left: 0;top: 0;}
+    </style>
+    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="carousel_leicc.js"></script>
+</head>
+<body>
+    <div class="carouselBox">
+        <ul class="myCarousel"></ul>
+    </div>
+    <script type="text/javascript">
+        jQuery(function($){
+            $('.carouselBox').ccCarousel({
+                img:['../images/g1.jpg','../images/g2.jpg','../images/g3.jpg','../images/g4.jpg','../images/g5.jpg'],
+                width:320,
+                height:320,
+                type:'fade',
+            });
+        })
+    </script>
+</body>
+</html>

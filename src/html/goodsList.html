@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入iconfont -->
+    <link rel="stylesheet" href="../lib/font/iconfont.css">
+    <!-- 引入base -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/goodsList_sass.css">
+    <link rel="shortcut icon" href="../images/g3.jpg">
+    <script src="../lib/jquery-3.0.0.min.js"></script>
+    <script src="../js/goodsList.js"></script>
+    <title>【仁和药房网】正规网上药店专业药品零售网,网上买药就上药房网!</title>
+</head>
+
+<body>
+    <header>
+        <div class="xinren clearfix">
+            <i class="iconfont icon-shouquan"></i>
+            <span>
+                该网站已经认证联盟认证为可信网站，请放心访问
+            </span>
+            <img src="../images/head_brand.png" alt="brand" class="fr">
+            <span class="fr">了解详情></span>
+        </div>
+        <div class="certificate clearfix">
+            <ul>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>网站安全监测</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>身份证明信息</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>ICP备案审查</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>工商登记信息</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>业务资质许可</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>网站信用信息</span></li>
+            </ul>
+        </div>
+        <div id="topNav">
+            <div class="topNav clearfix container">
+                <ul class="list clearfix">
+                    <li class="fl">请登陆</li>
+                    <li class="fl">注册</li>
+                    <li class="fl myweb">我的药房网<i class="iconfont icon-xiangshang"></i>
+                    </li>
+                    <li class="fl"><i class="iconfont icon-qingdan"></i>需求清单</li>
+                    <li class="fl phoneCode"><i class="iconfont icon-shoujitubiao"></i>手机版<i
+                            class="iconfont icon-xiangshang"></i>
+                    </li>
+                    <li class="fl webGuide">网站导航<i class="iconfont icon-xiangshang"></i></li>
+                    <li class="fl"><i class="iconfont icon-diqiu"></i>互联网药品信息服务资格证书:(京)-经营性-2014-0016</li>
+                </ul>
+                <!-- hover区域 -->
+                <div class="hoverNav  clearfix">
+                    <div class="drugWeb  clearfix">
+                        <ul>
+                            <li>我的清单</li>
+                            <li>我的优惠券</li>
+                            <li>我的留言</li>
+                            <li>我的贴子</li>
+                        </ul>
+                    </div>
+                    <div class="code2D  clearfix">
+                        <span>方式一</span>
+                        <span>扫描访问wep站</span>
+                        <img src="../images/phoneSearch.png" alt="手机二维码">
+                    </div>
+                    <div class="webNav  clearfix">
+                        <div class="clearfix fl">
+                            <h4>热门专区</h4>
+                            <ul class="fl">
+                                <li class="hightRed">重大疾病</li>
+                                <li class="hightRed">慢性疾病</li>
+                                <li>常见疾病</li>
+                                <li>健康商城</li>
+                                <li>体验商城</li>
+                            </ul>
+                            <ul class="fl">
+                                <li>情趣商城</li>
+                                <li>特产商城</li>
+                                <li>宁草堂</li>
+                                <li class="hightRed">健康社区</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix fl">
+                            <h4>特色频道</h4>
+                            <ul class="fl">
+                                <li class="hightRed">男科疾病</li>
+                                <li class="hightRed">盖平频道</li>
+                                <li>备孕频道</li>
+                                <li>少儿频道</li>
+                                <li class="hightRed">高血压频道</li>
+                            </ul>
+                            <ul class="fl">
+                                <li>消化不良</li>
+                                <li>过敏频道</li>
+                                <li>肝癌频道</li>
+                                <li>肠癌频道</li>
+                                <li>白血病频道</li>
+                            </ul>
+                            <ul class="fl">
+                                <li>浅部真菌</li>
+                                <li>乳腺癌频道</li>
+                                <li>胃癌频道</li>
+                                <li>肾癌频道</li>
+                                <li>渐冻人频道</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix fl">
+                            <h4>健康服务</h4>
+                            <ul>
+                                <li>医师咨询</li>
+                                <li>在线问诊</li>
+                                <li>健康咨询</li>
+                                <li>学医问药</li>
+                                <li>意见反馈</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchArea container clearfix">
+            <img src="../images/logo.png" alt="logo" class="fl">
+            <div class="fl">
+                <input type="text" placeholder="请输入关键字">
+                <p>搜索</p>
+            </div>
+            <p class="fl tousu">
+                <i class="iconfont icon-dianhua"></i>
+                <span>客户投诉电话</span>
+                <span>400-650-9988</span>
+            </p>
+            <p class="fl kefu">
+                <i class="iconfont icon-kefu"></i>
+                <span>欢迎使用</span>
+                <span>在线客服</span>
+            </p>
+            <ul class="clearfix frequentWord">
+                <li>桔贝合剂</li>
+                <li>感冒灵颗粒</li>
+                <li>肤痔清软膏</li>
+                <li>达芙文</li>
+                <li>爱乐维</li>
+                <li>五子衍宗丸</li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <div class="navArea container">
+            <div class="navAll fl">
+                <div>
+                    <span class="pointIt">全部商品分类</span>
+                    <ul id="guide">
+                        <li class="guide fl"><i class="iconfont icon-diaoping"></i><a href="#">重大疾病、肿瘤、肺癌</a></li>
+                        <li class="guide fl"><i class="iconfont icon-icon145"></i><a href="#">新药特药、血液、罕见病</a></li>
+                        <li class="guide fl"><i class="iconfont icon-yiyao-gan"></i><a href="#">慢性疾病、三高、男性健康</a></li>
+                        <li class="guide fl"><i class="iconfont icon-jiankangshequ"></i><a href="#">家庭常备、妇科、儿科</a></li>
+                        <li class="guide fl"><i class="iconfont icon-icon-test"></i><a href="#">中医养生、草药、参茸礼品</a></li>
+                        <li class="guide fl"><i class="iconfont icon-shiguan"></i><a href="#">医疗器械、康复、血压监测</a></li>
+                        <li class="guide fl"><i class="iconfont icon-icon22501"></i><a href="#">营养保健、减肥、亚健康</a></li>
+                        <li class="guide fl"><i class="iconfont icon-icon22501"></i><a href="#">健康超市、母婴、化妆品</a></li>
+                        <li class="guide fl"><i class="iconfont icon-jiankangshequ"></i><a href="#">健康服务、挂号、每康卡</a></li>
+                        <li class="guide fl"><i class="iconfont icon-yinxingyanjing"></i><a href="#">隐形眼镜、美瞳、护理液</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fl classify">
+                <ul>
+                    <li>首页</li>
+                    <li>新药特药进口药</li>
+                    <li>慈善援助</li>
+                    <li>慢性疾病</li>
+                    <li>常见疾病</li>
+                    <li>健康商城</li>
+                    <li>宁草堂</li>
+                    <li>健康社区</li>
+                </ul>
+            </div>
+            <div class="nav3 container">
+                <div class="clearfix">
+                    <h4>肿瘤 ></h4>
+                    <ul>
+                        <li>肿瘤</li>
+                        <li>肿瘤</li>
+                        <li>肿瘤</li>
+                        <li>肿瘤</li>
+                    </ul>
+
+                </div>
+                <div class="clearfix">
+                    <h4>重大疾病 ></h4>
+                    <ul>
+                        <li>重大疾病</li>
+                        <li>重大疾病</li>
+                        <li>重大疾病</li>
+                        <li>重大疾病</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h4>肺癌 ></h4>
+                    <ul>
+                        <li>肺癌</li>
+                        <li>肺癌</li>
+                        <li>肺癌</li>
+                        <li>肺癌</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h4>新药特效药 ></h4>
+                    <ul>
+                        <li>新药特效药</li>
+                        <li>新药特效药</li>
+                        <li>新药特效药</li>
+                        <li>新药特效药</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h4>糖尿病 ></h4>
+                    <ul>
+                        <li>糖尿病</li>
+                        <li>糖尿病</li>
+                        <li>糖尿病</li>
+                        <li>糖尿病</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h4>脑癌 ></h4>
+                    <ul>
+                        <li>脑癌</li>
+                        <li>脑癌</li>
+                        <li>脑癌</li>
+                        <li>脑癌</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h4>中药饮片 ></h4>
+                    <ul>
+                        <li>中药饮片</li>
+                        <li>中药饮片</li>
+                        <li>中药饮片</li>
+                        <li>中药饮片</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h4>日用百货 ></h4>
+                    <ul>
+                        <li>日用百货</li>
+                        <li>日用百货</li>
+                        <li>日用百货</li>
+                        <li>日用百货</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h4>鲜花服务 ></h4>
+                    <ul>
+                        <li>鲜花服务</li>
+                        <li>鲜花服务</li>
+                        <li>鲜花服务</li>
+                        <li>鲜花服务</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h4>保健理疗 ></h4>
+                    <ul>
+                        <li>保健理疗</li>
+                        <li>保健理疗</li>
+                        <li>保健理疗</li>
+                        <li>保健理疗</li>
+                    </ul>
+                </div>
+                <!-- <a href="#">查看更多</a> -->
+                <div>
+                    <img src="../images/yao.png" alt="">
+                    <img src="../images/yao1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="clearfix">
+        <div class="clearfix container">
+            <div class="fillUp"></div>
+            <aside class="clearfix fl">
+                <div class="classifyFolder">
+                    <dt><span></span>日用百货</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>口腔护理</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>奶粉</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>孕期用品</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>宝贝用品</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>宠物用品</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>小家电</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>幼儿营养品</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>彩妆</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>户外用品</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>手机及周边产品</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>护肤品</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>养生膳食</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>洗护专区</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>精油香薰</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>美容工具类</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>运动健身</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>面部护理</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>饮料食品</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                    <dt><span></span>驱蚊防虫</dt>
+                    <dd>
+                        <a href="details.html">保温杯</a>
+                        <a href="details.html">其他百货</a>
+                        <a href="details.html">冰袋</a>
+                        <a href="details.html">厨具</a>
+                        <a href="details.html">垃圾桶/袋</a>
+                        <a href="details.html">奶瓶</a>
+                        <a href="details.html">奶瓶清洗剂</a>
+                        <a href="details.html">家庭用纸</a>
+                        <a href="details.html">家用口罩</a>
+                        <a href="details.html">成人纸尿裤</a>
+                        <a href="details.html">护垫卫生巾</a>
+                        <a href="details.html">暖宝贴</a>
+                        <a href="details.html">柔顺剂</a>
+                        <a href="details.html">洁厕剂</a>
+                        <a href="details.html">洗手液</a>
+                        <a href="details.html">洗衣粉</a>
+                        <a href="details.html">活动商品</a>
+                        <a href="details.html">消毒液</a>
+                        <a href="details.html">清洁用品</a>
+                        <a href="details.html">灯具用品</a>
+                        <a href="details.html">热水袋</a>
+                        <a href="details.html">电池</a>
+                        <a href="details.html">皮肤止痒</a>
+                        <a href="details.html">皮肤消毒</a>
+                        <a href="details.html">酒精</a>
+                        <a href="details.html">除尘工具</a>
+                        <a href="details.html">鞋垫</a>
+                        <a href="details.html">鞋护理品</a>
+                    </dd>
+                </div>
+                <div class="viewHistory">
+                    <h4>浏览记录</h4>
+                    <!-- 未完成 -->
+                    <!-- ["https://img.yaofang.cn/images0/goods/42/85/c7/th_1707.jpg", 
+                        "https://img.yaofang.cn/images0/2d/6f/2f/2d6f2fc96004308be1046e9d524dac9c6a47accb.jpg", 
+                        "https://img.yaofang.cn/images0/c2/37/5a/c2375a2dbe44df5837384500a3ca26f99c90238a.jpg", 
+                        "https://img.yaofang.cn/images0/goods/08/66/a4/th_001615.png", 
+                        "https://img.yaofang.cn/images0/e2/90/1b/e2901bd94a9b185356a7a9f0248c6980cd38c8c1.jpg"] -->
+                    <a href="details.html">
+                        <div>
+                            <img src="https://img.yaofang.cn/images0/goods/42/85/c7/th_1707.jpg" alt="">
+                        </div>
+                        <b>赖氨酸磷酸氢钙颗粒</b>
+                        <i>￥398.00</i>
+                    </a>
+                    <a href="details.html">
+                        <div>
+                            <img src="https://img.yaofang.cn/images0/2d/6f/2f/2d6f2fc96004308be1046e9d524dac9c6a47accb.jpg" alt="">
+                        </div>
+                        <b>赖氨酸磷酸氢钙颗粒</b>
+                        <i>￥398.00</i>
+                    </a>
+                    <a href="details.html">
+                        <div>
+                            <img src="https://img.yaofang.cn/images0/c2/37/5a/c2375a2dbe44df5837384500a3ca26f99c90238a.jpg" alt="">
+                        </div>
+                        <b>赖氨酸磷酸氢钙颗粒</b>
+                        <i>￥398.00</i>
+                    </a>
+                    <a href="details.html">
+                        <div>
+                            <img src="https://img.yaofang.cn/images0/goods/08/66/a4/th_001615.png" alt="">
+                        </div>
+                        <b>赖氨酸磷酸氢钙颗粒</b>
+                        <i>￥398.00</i>
+                    </a>
+                    <a href="details.html">
+                        <div>
+                            <img src="https://img.yaofang.cn/images0/e2/90/1b/e2901bd94a9b185356a7a9f0248c6980cd38c8c1.jpg" alt="">
+                        </div>
+                        <b>赖氨酸磷酸氢钙颗粒</b>
+                        <i>￥398.00</i>
+                    </a>
+                </div>
+                <div class="brandIMG">
+                    <!-- 品牌图片 -->
+                    <!-- ["https://img.yaofang.cn/image1/html_img/f9/8e8a1f41d4364bc99d2195cedb1aafda.jpg?v=201902141407", 
+                        "https://img.yaofang.cn/image1/html_img/c8/ea2764c4e4d19fee86d85648f07c1ac5.jpg?v=201902141407", 
+                        "https://img.yaofang.cn/image1/html_img/6a/a591ff28f1ef42465d1486be0df523c3.jpg?v=201902141407", 
+                        "https://img.yaofang.cn/image1/html_img/1d/3ccfc064449ecf35d49cdfa2405452e2.jpg?v=201902141407"] -->
+                    <a href="details.html">
+                        <img src="https://img.yaofang.cn/image1/html_img/f9/8e8a1f41d4364bc99d2195cedb1aafda.jpg?v=201902141407" alt="">
+                    </a>
+                    <a href="details.html">
+                        <img src="https://img.yaofang.cn/image1/html_img/c8/ea2764c4e4d19fee86d85648f07c1ac5.jpg?v=201902141407" alt="">
+                    </a>
+                    <a href="details.html">
+                        <img src="https://img.yaofang.cn/image1/html_img/6a/a591ff28f1ef42465d1486be0df523c3.jpg?v=201902141407" alt="">
+                    </a>
+                    <a href="details.html">
+                        <img src="https://img.yaofang.cn/image1/html_img/1d/3ccfc064449ecf35d49cdfa2405452e2.jpg?v=201902141407" alt="">
+                    </a>
+                </div>
+            </aside>
+            <section class="clearfix fr">
+                <div class="classifySelect">
+                    <div class="selectTitle clearfix">
+                        <b>商品筛选：</b>
+                        <span>共<i>?</i>个商品</span>
+                    </div>
+                    <div class="selectList">
+                        <div class="list list_1">
+                            <dl>
+                                <dt>品牌:</dt>
+                                <dd>
+                                </dd>
+                                <dt>病症:</dt>
+                                <dd>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="classifyBanner">
+                    <a href="details.html">
+                        <img src="//img.yaofang.cn/image1/html_img/cc/5a3c0bc0ad65de05b43387403ca02feb.jpg?v=201902141407" alt="">
+                    </a>
+                </div>
+                <div class="classifySort">
+
+                </div>
+                <div class="classifyDrugsList"></div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

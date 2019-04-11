@@ -1,0 +1,13 @@
+.carouselBox{
+    position:relative;
+    overflow: hidden;
+}
+.carouselBox ul{
+    position:absolute;
+}
+.fade li{
+    position:absolute;
+}
+.vertical li{
+    float:left;
+}
