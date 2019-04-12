@@ -40,6 +40,7 @@ jQuery(function ($) {
                     console.log(res,res.length);
                     if(res.length>0){
                         alert("登陆成功！");
+                        $.cookie("user",$("#uname").val(),{path:'/'});
                         location.href="index.html?uname="+$("#uname").val();
                     }
                     else if(res.length<=0){

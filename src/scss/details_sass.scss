@@ -8,7 +8,7 @@
     position: relative;
     .list{
         color:#868686;
-        margin-left:450px;
+        margin-left:300px;
         li{
             float: left;
             line-height: 30px;
@@ -358,8 +358,9 @@ main{
         .right_property {
             float: right;
             width: 284px;
+            margin-right:70px;
             img{
-                width: 235px;
+                width: 280px;
                 height: 370px;
             }
         }

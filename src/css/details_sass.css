@@ -12,7 +12,7 @@
 
 .topNav .list {
   color: #868686;
-  margin-left: 450px;
+  margin-left: 300px;
 }
 
 .topNav .list li {
@@ -402,10 +402,11 @@ main .bigBox .middle_property .fly_item {
 main .bigBox .right_property {
   float: right;
   width: 284px;
+  margin-right: 70px;
 }
 
 main .bigBox .right_property img {
-  width: 235px;
+  width: 280px;
   height: 370px;
 }
 

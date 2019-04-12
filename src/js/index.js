@@ -4,7 +4,7 @@ jQuery(function ($) {
         var params = location.search.slice(1);
         params = params.split("=")[1];
         if (params) {
-            $(".user").text("欢迎!" + params);
+            $(".user").html('<span>欢迎!'+params+'</span>&nbsp;&nbsp;<span class="logout" style="color:orange;">退出</span>');
         }
         console.log(params);
     }
