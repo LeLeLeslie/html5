@@ -21,6 +21,7 @@
     <link href="lib/base_glass.css" rel="stylesheet" type="text/css" />
     <script src="lib/common.js"></script>
     <script src="lib/jquery.cookie.js"></script>
+    <!-- <script src="js/index.js"></script> -->
     <script src="js/details.js"></script>
     <script src="js/toolbar.js"></script>
     <title>【仁和药房网】正规网上药店专业药品零售网,网上买药就上药房网!</title>
@@ -161,45 +162,6 @@
     <!-- 回到顶部 start-->
     <div class="toolbar-wrap">
         <div class="toolbar">
-            <!--右边内容 start-->
-            <div class="toolbar-panels J-panel">
-                <!--- 需求清单 -->
-                <div style="visibility: hidden; z-index: -1;" class="toolbar-panel tbar-panel-cart">
-                    <h1 class="title">
-                        <i class="iconfont icon-biaodan"></i>需求清单<a href="javascript:void(0);"
-                            class="iconfont icon-msnui-close"></a>
-                    </h1>
-                    <div class="noLogin">还没有登录，登录后商品将被保存 <a herf="" onclick="showLogin()">登录</a></div>
-                    <div class="scroll" id="ajaxCarts">
-                        <div class="con suit">
-                            <h2 class="mendian">仁和药房网（北京）医药科技有限公司第八药房<div class="jSelfLogo"><span
-                                        class="jSelfTitle">自营</span></div>
-                            </h2>
-                            <dl>
-                                <dt><a href="//www.yaofang.cn/goods-1073398-613.html" target="_blank"><img
-                                            src="//img.yaofang.cn/images0/90/52/53/9052536d35de768b89d5a75c7984d96c0b8aa712.jpg"></a>
-                                </dt>
-                                <dd><span><a href="//www.yaofang.cn/goods-1073398-613.html"
-                                            target="_blank"><b>善存小佳维咀嚼片（香甜柠檬味）</b><i>78g(1.95g*40片)/盒</i></a></span><strong>￥52.00<i>×1</i></strong><a
-                                        href="javascript:delCG(9545584);"
-                                        class="iconfont icon-iconfontshanchu rihgtNav_Cart_delete"></a></dd>
-                            </dl>
-                        </div>
-                    </div>
-                    <!---无记录-->
-                    <div class="noRecord" style="display: none;">
-                        <i class="iconfont icon-gouwuche2"></i>
-                        <p>需求清单空空的，赶快去挑选心仪的商品吧~<a href="/">去首页看看</a></p>
-                    </div>
-                    <div class="count">
-                        <span><i>1</i>件商品<b>共计：<i id="rightSusum">52.00</i></b></span>
-                        <a href="/c/carts" class="confirm_btn1">下一步</a>
-                    </div>
-                </div>
-                <!-- <script type="text/javascript" src="//js.yaofang.cn/pc/layer/layer.js?v=201901301523"></script> -->
-                <!-- <script type="text/javascript" src="//js.yaofang.cn/pc/jquery.lazyload.min.js?v=201901301523"></script> -->
-            </div>
-            <!--右边内容 end-->
             <!--左边内容 上 start-->
             <div class="toolbar-tabs J-tab">
                 <!-- <div class="toolbar-tab tbar-tab-myAccount">
@@ -207,7 +169,7 @@
                     <em class="tab-text">我的帐户</em><em class="tab-text">我的帐号</em></div>
                 <div class="toolbar-tab tbar-tab-cart" id="shopCart"> -->
                 <!-- <a href="javascript:void(0);" onclick="getRightCart()"> -->
-                <a >
+                <a>
                     <div class="message_list">
                         <i class="iconfont icon-biaodan"></i>
                         <div class="txt">我的购物车</div>
@@ -220,14 +182,21 @@
         <!--左边内容 下 start-->
         <div class="toolbar-footer">
             <div class="toolbar-tab tbar-tab-top">
-                <a >
+                <a>
                     <i class="iconfont icon-xiangshang" style="transform: rotate(180deg);"></i>
                     <em class="footer-tab-text">顶部</em>
                 </a>
             </div>
         </div>
         <!--左边内容 下 end-->
-    </div>
+        <!-- 右边内容 start -->
+        <div class="rightArea">
+            <ul></ul>
+            <div class="totalPrice">
+                <span class="totalPrice_s"></span>
+                <a href="html/shoppingCart.html">下一步</a>
+            </div>
+        </div>
     </div>
     <!-- 回到顶部 end -->
 
@@ -321,8 +290,7 @@
                         </dd>
                     </dl>
                 </div>
-                <a  class="confirm_btn1 btnCart" id="add_cart"><i
-                        class="iconfont icon-gouwuche2"></i>加入需求清单
+                <a class="confirm_btn1 btnCart" id="add_cart"><i class="iconfont icon-gouwuche2"></i>加入需求清单
                 </a>
                 <div id="flyItem" class="fly_item"><img
                         src="//img.yaofang.cn/images0/90/52/53/9052536d35de768b89d5a75c7984d96c0b8aa712.jpg" width="40"

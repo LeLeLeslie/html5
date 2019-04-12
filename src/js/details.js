@@ -102,6 +102,17 @@ jQuery(function ($) {
 
         }
     })
+    //购物车显示
+    $(".message_list").on("click",function(){
+        if($(".user").hasClass("login")){
+            $(".rightArea").show();
+            $(".user").removeClass("login");
+        }
+        else{
+            $(".rightArea").hide();
+            $(".user").addClass("login");
+        }
+    })
     //用户名显示
     function unameRender() {
         if ($.cookie("user")) {
@@ -116,7 +127,7 @@ jQuery(function ($) {
     //用户退出
     $(".logout").on("click", function () {
         // $.cookie("user", null);
-        Cookie.removeCookie("user","/")
+        Cookie.removeCookie("user","/")//利用common.js删除cookie
         location.href = "html/login.html";
     })
     //用户登陆
@@ -145,21 +156,54 @@ jQuery(function ($) {
                 $("#numInp")[0].value++;
             }
         })
+        //2.1 创建li
+    function liMaker(res, num, parent, begin) {
+        init = begin ? begin : 0;
+        // console.log(init,begin);
+        for (let i = init; i < num; i++) {
+            var $a = $('<a/>').appendTo(parent).attr("href", "html/goodsList.html").css({
+                "display":"inline-block",
+            });
+            var $li = $('<li/>').appendTo($a).attr("guid", res[i].guid);
+            var $div = $('<div/>').appendTo($li);
+            var $img = $('<img/>').appendTo($div).prop('src', res[i].imgUrl).addClass("expand");
+            // var $li = $('<li/>').appendTo($li);
+            var $p1 = $('<p/>').appendTo($li).text(res[i].goodsName);
+            var $p2 = $('<p/>').appendTo($li);
+            var $s1 = $("<span/>").appendTo($p2).html('￥' + res[i].price+"&nbsp;")
+            var $s2 = $("<span/>").appendTo($p2).text('x' + res[i].qty).css({
+                "color":"red",
+            });
+        }
+        // parent.children('li').addClass('fl').css({
+            // "text-align": "center",
+        // });//使得元素左浮
+    }
         //购物车数量显示：发送请求mySQL数据,渲染
-        $.ajax({
-            type: "get",
-            url: "api/details.php",
-            data: { "msg": "cartNum", "uname": $.cookie("user") },
-            success: function (res) {
-                res = JSON.parse(res).cartlist;
-                var num = 0;
-                res.map(function (item, idx) {
-                    num += item.qty * 1;
-                })
-                $(".cart_num").text(num);
-                console.log(res,num);
-            }
-        })
+        function cartNumRender(){
+            $.ajax({
+                type: "get",
+                url: "api/details.php",
+                data: { "msg": "cartNum", "uname": $.cookie("user") },
+                success: function (res) {
+                    res = JSON.parse(res).cartlist;
+                    //显示购物车商品数量 //显示总价:
+                    var total = 0;
+                    var num = 0;
+                    res.map(function (item, idx) {
+                        num += item.qty * 1;
+                        total = total + item.qty*item.price;
+                        console.log(total);
+                    })
+                    $(".cart_num").text(num);
+                    $(".totalPrice_s").html(res.length+'件商品,共:<br/> <span style="color:red;">'+total+'元</span>');
+                    //显示购物车商品
+                    liMaker(res, res.length, $(".rightArea ul"));
+                    console.log(res,num);
+                }
+            })
+        }
+        $.cookie("user")?cartNumRender():0;
     //加入购物车
     $("#add_cart").on("click", function () {
         //判断是否登陆
@@ -179,14 +223,21 @@ jQuery(function ($) {
                     "guid": guid,
                     "qty": qty,
                 },
-                success: function (res) {
-                    res = JSON.parse(res).goodslist;
+                success:function (res) {
+                    res = JSON.parse(res).cartlist;
+                    //显示购物车商品数量 //显示总价:
+                    var total = 0;
                     var num = 0;
                     res.map(function (item, idx) {
                         num += item.qty * 1;
+                        total = total + item.qty*item.price;
+                        console.log(total);
                     })
                     $(".cart_num").text(num);
-                    console.log(res, num);
+                    $(".totalPrice_s").html(res.length+'件商品,共:<br/> 元<span style="color:red;">'+total+'</span>');
+                    //显示购物车商品
+                    liMaker(res, res.length, $(".rightArea ul"));
+                    console.log(res,num);
                 }
             })
 

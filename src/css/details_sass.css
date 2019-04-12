@@ -410,5 +410,70 @@ main .bigBox .right_property img {
   height: 370px;
 }
 
+/*购物车显示隐藏样式*/
+.rightArea {
+  width: 200px;
+  height: 100%;
+  overflow: scroll;
+  position: fixed;
+  top: 0px;
+  right: 40px;
+  background: rgba(230, 225, 225, 0.5);
+  display: none;
+}
+
+.rightArea ul {
+  margin-bottom: 100px;
+}
+
+.rightArea a {
+  width: 100%;
+}
+
+.rightArea p {
+  color: gray;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+}
+
+.rightArea .totalPrice {
+  height: 50px;
+  width: 100%;
+  background: rgba(179, 175, 175, 0.5);
+  position: fixed;
+  bottom: 10px;
+}
+
+.rightArea .totalPrice span, .rightArea .totalPrice a {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  float: left;
+  text-align: center;
+  position: absolute;
+}
+
+.rightArea .totalPrice span {
+  font-size: 12px;
+  line-height: 25px;
+  left: 0px;
+}
+
+.rightArea .totalPrice span span {
+  left: 0px;
+}
+
+.rightArea .totalPrice a {
+  height: 80%;
+  width: 100px;
+  left: 100px;
+  line-height: 40px;
+  margin-top: 5px;
+  background: #DA2D35;
+  color: #fff;
+}
+
 /*nav样式*/
 /*详情页无需导航栏*/
