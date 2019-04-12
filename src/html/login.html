@@ -7,16 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="../lib/font/iconfont.css">
+    <!-- <link rel="stylesheet" href="../lib/toolbar_icon.css"> -->
+    
     <!-- 引入base -->
     <base href="../">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/details_sass.css">
-    <link rel="stylesheet" href="css/register_sass.css">
+    <!-- <link rel="stylesheet" href="css/register_sass.css"> -->
+    <link rel="stylesheet" href="css/login.css">
     <link rel="shortcut icon" href="images/g3.jpg">
     <script src="lib/jquery-3.0.0.min.js"></script>
-    <script src="js/details.js"></script>
-    <title>注册</title>
+    <script src="js/login.js"></script>
+    <!-- <script src="js/details.js"></script> -->
+    <title>登陆</title>
 </head>
 
 <body>
@@ -126,8 +130,9 @@
         </div>
         <div class="searchArea container clearfix" style="padding-bottom:20px;border-bottom:1px solid #086AB3">
             <img src="images/logo.png" alt="logo" class="fl">
-            <span>我已注册</span>
-            <a href="login.html"></a>
+            <p class="fr" style="padding-top:10px;">
+                <span>新用户？</span><a href="html/register.html">快速注册</a>
+            </p>
             <!-- <div class="fl">
                 <input type="text" placeholder="请输入关键字">
                 <p>搜索</p>
@@ -152,6 +157,90 @@
             </ul> -->
         </div>
     </header>
+    <main>
+        <div class="login clearfix">
+            <div class="container">
+                <div class="slogan"><img src="//img.yaofang.cn/pc/login_slogan.png" alt="您还可以通过以下方式登录："></div>
+                <div class="content">
+                    <div class="tab_menu hd">
+                        <ul>
+                            <!-- <li id="menu_cli" class="on" style="margin-left: 68px;"><a href="javascript:;">账户登录</a> </li> -->
+                            <li id="menu_cli" class="cli_my_menu on"><a href="javascript:;">账户登录</a> </li>
+                            <!-- <li id="menu_cli_2" class="cli_my_menu_2"><a href="javascript:;">手机验证登录</a> </li> -->
+                        </ul>
+                    </div>
+                    <div class="tab_box bd">
+                        <!---  帐户登录-->
+                        <div class="list_common userLogin">
+                            <div class="tishi tishi_1">
+                                <i class="iconfont icon-zhankai" style="position:relative;top:1px;"></i><span
+                                    class="error_msg">请输入账户名和密码</span>
+                            </div>
+                            <!-- <form action=""> -->
+                            <dl>
+                                <dt>
+                                    <i class="iconfont icon-wo"></i>
+                                    <input type="text" id="uname" name="name" placeholder="用户名/手机号/邮箱" datatype="m|e"
+                                        nullmsg="请输入用户名" errormsg="账号可以是手机或邮箱地址">
+                                    <!-- <i class="iconfont icon-msnui-close close_login"></i> -->
+                                </dt>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <i class="iconfont icon-mima"></i>
+                                    <input type="password" id="pwd" name="userpassword" datatype="*6-16"
+                                        placeholder="密码" nullmsg="请输入密码" errormsg="密码范围在6~16位之间！">
+                                    <!-- <i class="iconfont icon-msnui-close close_login_2" style="float:right;"></i> -->
+                                </dt>
+                            </dl>
+                            <!-- 验证码 -->
+                            <!-- <dl id="_yzm" style="display:none;"> -->
+                                <!-- <dd>
+                                    <input type="text" id="yzm" class="text1" name="imgVer"
+                                        datatype="s4-4,/^[a-zA-Z0-9]+$/" errormsg="请输入正确的图形验证码！" placeholder="请输入验证码"
+                                        maxlength="4">
+                                    <div class="imgVer"><img src="/c/common/Common/vcode" alt=""><i>看不清<br>换一张</i></div>
+                                </dd> -->
+                            <!-- </dl> -->
+                            <!-- <p><a href="/c/user/Login/findPwd">忘记密码？</a><a
+                                    href="/c/protocol/RegistrProtocol">《仁和药房网用户协议》</a> </p> -->
+                            <div class="btn"><input type="button" id="cli_login" value="登 录"></div>
+                            <!-- </form> -->
+                        </div>
+                        <!---  手机验证登录-->
+                        <!-- <div class="list_common mobileLogin" style="display: none;">
+                            <div class="tishi tishi_2">
+                                <i class="iconfont icon-zhankai" style="position:relative;top:1px;"></i><span
+                                    class="p_error_msg">请输入11位数手机号码</span>
+                            </div> -->
+                            <!-- <form action=""> -->
+                            <!-- <dl>
+                                <dt>
+                                    <i class="iconfont icon-shouji3"></i>
+                                    <input type="text" id="p_un" name="name" placeholder="请输入手机号" datatype="m"
+                                        nullmsg="请输入手机号" errormsg="请输入正确的手机号" maxlength="11"
+                                        onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                        onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                    <i class="iconfont icon-msnui-close" style="float:right;"></i>
+                                </dt>
+                                <dd>
+                                    <input type="text" id="p_yzm" class="text1" name="imgVer"
+                                        datatype="s4-4,/^[a-zA-Z0-9]+$/" errormsg="请输入正确的图形验证码！" placeholder="请输入验证码"
+                                        maxlength="4">
+                                    <div class="imgVer"><img src="/c/common/Common/vcode" alt=""><i>看不清<br>换一张</i></div>
+                                </dd>
+                                <dd>
+                                    <input type="text" id="p_msm" class="text1" datatype="*6-6,n" placeholder="请输入短信验证码"
+                                        nullmsg="请输入短信验证码" errormsg="短信验证码只能是6位数字" maxlength="6"
+                                        onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                        onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                    <div class="smsVer">获取手机验证码</div>
+                                </dd>
+                            </dl>
+                            <div class="btn"><input type="button" id="cli_p_login" value="登 录"></div> -->
+                            <!-- </form> -->
+                        <!-- </div> -->
+    </main>
 </body>
 
 </html>

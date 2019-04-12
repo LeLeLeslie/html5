@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2019-04-12 00:59:28
 * @Last Modified by:   Marte
-* @Last Modified time: 2019-04-12 00:59:42
+* @Last Modified time: 2019-04-12 10:52:37
 */
 .register_link {
   float: right;
@@ -43,7 +43,7 @@
           margin: 0;
           background: none;
           text-align: center;
-          width: 50%;
+          width: 100%;
           float: left;
           padding: 0;
           line-height: 50px;
@@ -87,7 +87,7 @@
           .login .content .list_common dl dt input {
             width: 218px;
             float: left;
-            height: 40px;
+            height: 38px;
             line-height: 40px;
             padding: 0 10px; }
         .login .content .list_common dl dd {

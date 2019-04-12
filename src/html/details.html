@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/details_sass.css">
     <link rel="stylesheet" href="lib/toolbar.css">
-    <link rel="stylesheet" href="lib/toolbar_icon.css">
+    <!-- <link rel="stylesheet" href="lib/toolbar_icon.css"> -->
     <link rel="shortcut icon" href="images/g3.jpg">
     <script src="lib/jquery-3.0.0.min.js"></script>
     <script src="lib/jquery-1.7.min.js"></script>
@@ -160,40 +161,6 @@
         <div class="toolbar">
             <!--右边内容 start-->
             <div class="toolbar-panels J-panel">
-                <!--- 我的账户 -->
-                <div style="visibility: hidden; z-index: -1;" class="toolbar-panel tbar-panel-myAccount">
-                    <h1 class="title"><i class="iconfont icon-gerenzhongxin"></i>我的账户<a href="javascript:void(0);"
-                            class="iconfont icon-msnui-close"></a></h1>
-                    <dl>
-                        <dt><a href="/c/user/user_Center" target="_blank"><img id="r_tou"
-                                    src="//img.yaofang.cn/image1/common/default/default_img.jpg" title="" alt=""><span>
-                                    <p id="r_name">药房网用户</p><br>，您好！
-                                </span></a></dt>
-                        <dd class="l1">
-                            <span>会员级别：<b id="r_ji">普通会员</b></span>
-                            <span>我的积分：<b id="r_point">0</b>分</span>
-                        </dd>
-                        <!--
-                <dd class="l2">
-                    <span>资料完成：</span>
-                    <span class="process"><i></i></span>
-                    <span class="green" id="r_status">0%</span>
-                </dd>
-                -->
-                    </dl>
-                    <ul>
-                        <li><a href="/c/user/user_Order" target="_blank"><i
-                                    class="iconfont icon-wodedingdan"></i><b>我的订单</b></a></li>
-                        <li><a href="/c/user/user_Bonus" target="_blank"><i
-                                    class="iconfont icon-wodeyouhuiquan"></i><b>我的优惠券</b></a></li>
-                        <li><a href="/c/user/user_Deposit" target="_blank"><i
-                                    class="iconfont icon-wodeyucunkuan"></i><b>我的预存款</b></a></li>
-                        <li><a href="//bbs.yaofang.cn/" target="_blank"><i
-                                    class="iconfont icon-shequ-in"></i><b>健康社区</b></a></li>
-                        <li><a href="/c/channel/index/jbpd" target="_blank"><i
-                                    class="iconfont icon-yaopin"></i><b>疾病频道</b></a></li>
-                    </ul>
-                </div>
                 <!--- 需求清单 -->
                 <div style="visibility: hidden; z-index: -1;" class="toolbar-panel tbar-panel-cart">
                     <h1 class="title">
@@ -227,109 +194,14 @@
                         <a href="/c/carts" class="confirm_btn1">下一步</a>
                     </div>
                 </div>
-                <script type="text/javascript" src="//js.yaofang.cn/pc/layer/layer.js?v=201901301523"></script>
-                <script type="text/javascript" src="//js.yaofang.cn/pc/jquery.lazyload.min.js?v=201901301523"></script>
-                <!--- 我的关注 -->
-                <div style="visibility: hidden; z-index: -1;" data-name="follow"
-                    class="toolbar-panel tbar-panel-follow">
-                    <h1 class="title"><i class="iconfont icon-shoucang"></i>我的关注<a href="javascript:void(0);"
-                            class="iconfont icon-msnui-close"></a></h1>
-                    <div class="tab_menu hd">
-                        <ul>
-                            <li class="on"><a href="javascript:;">商品</a></li>
-                            <li class=""><a href="javascript:;">分店</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab_box bd">
-                        <!---商品-->
-                        <div class="list_common" style="display: block;">
-                            <div class="content">
-                                <div class="list_height" id="r_goods">
-                                    <div class="noRecord" style="display: none;"><img
-                                            src="//img.yaofang.cn/pc/noRecord_logo.png">
-                                        <p>还没有关注商品哦~<a href="/c">去首页看看</a></p>
-                                    </div>
-                                </div>
-                                <p><a href="/c/user/user_Collection" target="_blank">查看更多关注商品 》</a></p>
-                            </div>
-                        </div>
-                        <!---旗舰店-->
-                        <div class="list_common flagShipStore" style="display: none;">
-                            <div class="content">
-                                <div class="list_height" id="r_dealer">
-                                    <div class="noRecord" style="display: none;"><img
-                                            src="//img.yaofang.cn/pc/noRecord_logo.png">
-                                        <p>还没有关注门店哦~<a href="/c">去首页看看</a></p>
-                                    </div>
-                                </div>
-                                <p><a href="/c/user/user_Collection" target="_blank">查看更多关注分店 》</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--- 最近浏览 -->
-                <div style="visibility: hidden; z-index: -1;" class="toolbar-panel tbar-panel-recentBrowsing">
-                    <h1 class="title"><i class="iconfont icon-zuijinfangwen"></i>最近浏览<a href="javascript:void(0);"
-                            class="iconfont icon-msnui-close"></a></h1>
-                    <div class="overflow">
-                        <div class="content">
-                            <div class="list_height" id="r_history">
-                                <dl>
-                                    <dt><span><a href="/goods-1073398-613.html"
-                                                target="_blank">善存小佳维咀嚼片（香甜柠檬味）</a></span><strong></strong></dt>
-                                    <dd><a href="/goods-1073398-613.html" target="_blank"><img
-                                                src="//img.yaofang.cn/images0/90/52/53/9052536d35de768b89d5a75c7984d96c0b8aa712.jpg"
-                                                title="善存小佳维咀嚼片（香甜柠檬味）" alt="善存小佳维咀嚼片（香甜柠檬味）"></a><span><b>￥52.00</b><a
-                                                href="/goods-1073398-613.html" target="_blank"
-                                                class="r_addhis">查看详情</a></span></dd>
-                                </dl>
-                                <dl>
-                                    <dt><span><a href="/goods-1020072-611.html"
-                                                target="_blank">儿童止痒凝露</a></span><strong></strong></dt>
-                                    <dd><a href="/goods-1020072-611.html" target="_blank"><img
-                                                src="//img.yaofang.cn/images0/8d/78/8b/8d788b02b72b72f18758a52f22c267378589bd12.jpg"
-                                                title="儿童止痒凝露" alt="儿童止痒凝露"></a><span><b>￥16.00</b><a
-                                                href="/goods-1020072-611.html" target="_blank"
-                                                class="r_addhis">查看详情</a></span></dd>
-                                </dl>
-                                <dl>
-                                    <dt><span><a href="/goods-1002867-611.html"
-                                                target="_blank">越星牌洗必泰碘消毒液</a></span><strong></strong></dt>
-                                    <dd><a href="/goods-1002867-611.html" target="_blank"><img
-                                                src="//img.yaofang.cn/images0/0a/eb/dd/0aebdd71eb3a89be51e6088d13200ae2bac584b0.jpg"
-                                                title="越星牌洗必泰碘消毒液" alt="越星牌洗必泰碘消毒液"></a><span><b>￥6.00</b><a
-                                                href="/goods-1002867-611.html" target="_blank"
-                                                class="r_addhis">查看详情</a></span></dd>
-                                </dl>
-                                <dl>
-                                    <dt><span><a href="/goods-1000885-611.html"
-                                                target="_blank">洗得宝牌碘伏消毒液</a></span><strong></strong></dt>
-                                    <dd><a href="/goods-1000885-611.html" target="_blank"><img
-                                                src="//img.yaofang.cn/images0/6d/36/c8/6d36c8f9c3308007fc92b8450aff4f932bb48e29.jpg"
-                                                title="洗得宝牌碘伏消毒液" alt="洗得宝牌碘伏消毒液"></a><span><b>￥4.30</b><a
-                                                href="/goods-1000885-611.html" target="_blank"
-                                                class="r_addhis">查看详情</a></span></dd>
-                                </dl>
-                                <dl>
-                                    <dt><span><a href="/goods-1091160-892.html"
-                                                target="_blank">赖氨酸磷酸氢钙颗粒</a></span><strong></strong></dt>
-                                    <dd><a href="/goods-1091160-892.html" target="_blank"><img
-                                                src="//img.yaofang.cn/images0/goods/42/85/c7/th_1707.jpg"
-                                                title="赖氨酸磷酸氢钙颗粒" alt="赖氨酸磷酸氢钙颗粒"></a><span><b>￥314.00</b><a
-                                                href="/goods-1091160-892.html" target="_blank"
-                                                class="r_addhis">查看详情</a></span></dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- <script type="text/javascript" src="//js.yaofang.cn/pc/layer/layer.js?v=201901301523"></script> -->
+                <!-- <script type="text/javascript" src="//js.yaofang.cn/pc/jquery.lazyload.min.js?v=201901301523"></script> -->
             </div>
             <!--右边内容 end-->
             <!--左边内容 上 start-->
             <div class="toolbar-tabs J-tab">
                 <div class="toolbar-tab tbar-tab-myAccount">
                     <i class="iconfont icon-gerenzhongxin"></i>
-
                     <em class="tab-text">我的帐户</em><em class="tab-text">我的帐号</em></div>
                 <div class="toolbar-tab tbar-tab-cart" id="shopCart">
                     <a href="javascript:void(0);" onclick="getRightCart()">
@@ -340,57 +212,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="toolbar-tab tbar-tab-follow">
-                    <i class="iconfont icon-shoucang"></i>
-
-                    <em class="tab-text">我的关注</em><em class="tab-text">我的关注</em><em class="tab-text">我的关注</em></div>
-                <div class="toolbar-tab tbar-tab-recentBrowsing">
-                    <i class="iconfont icon-zuijinfangwen"></i>
-
-                    <em class="tab-text">最近浏览</em><em class="tab-text">最近浏览</em></div>
-                <!--临时客服 start-->
-                <div class="toolbar-tab">
-                    <a href="javascript:;"
-                        onclick="_MEIQIA('showPanel',{groupToken:'b5d4fa04d4909d01f8c9120bba5f53d7'})">
-                        <i class="iconfont icon-kefu1"></i><em class="footer-tab-text footer-feedback">客服</em>
-                    </a>
-                </div>
-                <!--临时客服 end-->
-                <div class="toolbar-tab">
-                    <a href="//bbs.yaofang.cn/" target="_blank">
-                        <i class="iconfont icon-shequ-out"></i><em class="tab-text">健康社区</em>
-                    </a>
-                </div>
-                <div class="toolbar-tab">
-                    <a href="/c/channel/index/jbpd" target="_blank">
-                        <i class="iconfont icon-yaowan"></i><em class="tab-text">疾病频道</em>
-                    </a>
-                </div>
             </div>
             <!--左边内容 上 end-->
             <!--左边内容 下 start-->
             <div class="toolbar-footer">
                 <div class="toolbar-tab tbar-tab-top">
                     <a href="#">
-                        <i class="iconfont icon-xiangshang"></i>
+                        <i class="iconfont icon-xiangshang" style="transform: rotate(180deg);"></i>
                         <em class="footer-tab-text">顶部</em>
-                    </a>
-                </div>
-                <div class="toolbar-tab tbar-tab-erweima">
-                    <a href="javascript:;">
-                        <i class="iconfont icon-erweima"></i>
-                    </a>
-                    <div class="qrcode" style="display: none;">
-                        <dl>
-                            <dt>访问Wap站</dt>
-                            <dd><img src="//img.yaofang.cn/pc/wap_twoDim.jpg?v=201901301523" alt=""></dd>
-                        </dl>
-                    </div>
-                </div>
-                <div class="toolbar-tab">
-                    <a href="https://wj.qq.com/s/2682324/bd03" target="_blank">
-                        <i class="iconfont icon-yijian"></i>
-                        <em class="footer-tab-text">反馈</em>
                     </a>
                 </div>
             </div>

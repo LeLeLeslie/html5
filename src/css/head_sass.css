@@ -12,7 +12,7 @@
 
 .topNav .list {
   color: #868686;
-  margin-left: 450px;
+  margin-left: 400px;
 }
 
 .topNav .list li {
@@ -21,6 +21,10 @@
   font-size: 12px;
   padding: 0px 5px;
   margin-right: 10px;
+}
+
+.topNav .list li:nth-child(1) {
+  color: #086AB3;
 }
 
 .topNav .list li:nth-child(2) {
