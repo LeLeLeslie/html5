@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入iconfont -->
+    <link rel="stylesheet" href="../lib/font/iconfont.css">
+    <!-- 引入base -->
+    <base href="../">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/details_sass.css">
+    <link rel="stylesheet" href="lib/toolbar.css">
+    <link rel="stylesheet" href="lib/toolbar_icon.css">
+    <link rel="shortcut icon" href="images/g3.jpg">
+    <script src="lib/jquery-3.0.0.min.js"></script>
+    <script src="lib/jquery-1.7.min.js"></script>
+    <script src="lib/jquery.jqzoom-2.2.js" type="text/javascript"></script>
+    <link href="lib/base_glass.css" rel="stylesheet" type="text/css" />
+    <script src="js/details.js"></script>
+    <script src="js/toolbar.js"></script>
+    <title>【仁和药房网】正规网上药店专业药品零售网,网上买药就上药房网!</title>
+</head>
+
+<body>
+    <header>
+        <!-- 详情页无网站安全信息认证提醒 -->
+        <!-- <div class="xinren clearfix">
+            <i class="iconfont icon-shouquan"></i>
+            <span>
+                该网站已经认证联盟认证为可信网站，请放心访问
+            </span>
+            <img src="images/head_brand.png" alt="brand" class="fr">
+            <span class="fr">了解详情></span>
+        </div>
+        <div class="certificate clearfix">
+            <ul>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>网站安全监测</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>身份证明信息</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>ICP备案审查</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>工商登记信息</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>业务资质许可</span></li>
+                <li class="fl"><i class="iconfont icon-dagou"></i><span>网站信用信息</span></li>
+            </ul>
+        </div> -->
+        <div id="topNav">
+            <div class="topNav clearfix container">
+                <ul class="list clearfix">
+                    <li class="fl">请登陆</li>
+                    <li class="fl">注册</li>
+                    <li class="fl myweb">我的药房网<i class="iconfont icon-xiangshang"></i>
+                    </li>
+                    <li class="fl"><i class="iconfont icon-qingdan"></i>需求清单</li>
+                    <li class="fl phoneCode"><i class="iconfont icon-shoujitubiao"></i>手机版<i
+                            class="iconfont icon-xiangshang"></i>
+                    </li>
+                    <li class="fl webGuide">网站导航<i class="iconfont icon-xiangshang"></i></li>
+                    <li class="fl"><i class="iconfont icon-diqiu"></i>互联网药品信息服务资格证书:(京)-经营性-2014-0016</li>
+                </ul>
+                <!-- hover区域 -->
+                <div class="hoverNav  clearfix">
+                    <div class="drugWeb  clearfix">
+                        <ul>
+                            <li>我的清单</li>
+                            <li>我的优惠券</li>
+                            <li>我的留言</li>
+                            <li>我的贴子</li>
+                        </ul>
+                    </div>
+                    <div class="code2D  clearfix">
+                        <span>方式一</span>
+                        <span>扫描访问wep站</span>
+                        <img src="images/phoneSearch.png" alt="手机二维码">
+                    </div>
+                    <div class="webNav  clearfix">
+                        <div class="clearfix fl">
+                            <h4>热门专区</h4>
+                            <ul class="fl">
+                                <li class="hightRed">重大疾病</li>
+                                <li class="hightRed">慢性疾病</li>
+                                <li>常见疾病</li>
+                                <li>健康商城</li>
+                                <li>体验商城</li>
+                            </ul>
+                            <ul class="fl">
+                                <li>情趣商城</li>
+                                <li>特产商城</li>
+                                <li>宁草堂</li>
+                                <li class="hightRed">健康社区</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix fl">
+                            <h4>特色频道</h4>
+                            <ul class="fl">
+                                <li class="hightRed">男科疾病</li>
+                                <li class="hightRed">盖平频道</li>
+                                <li>备孕频道</li>
+                                <li>少儿频道</li>
+                                <li class="hightRed">高血压频道</li>
+                            </ul>
+                            <ul class="fl">
+                                <li>消化不良</li>
+                                <li>过敏频道</li>
+                                <li>肝癌频道</li>
+                                <li>肠癌频道</li>
+                                <li>白血病频道</li>
+                            </ul>
+                            <ul class="fl">
+                                <li>浅部真菌</li>
+                                <li>乳腺癌频道</li>
+                                <li>胃癌频道</li>
+                                <li>肾癌频道</li>
+                                <li>渐冻人频道</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix fl">
+                            <h4>健康服务</h4>
+                            <ul>
+                                <li>医师咨询</li>
+                                <li>在线问诊</li>
+                                <li>健康咨询</li>
+                                <li>学医问药</li>
+                                <li>意见反馈</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchArea container clearfix">
+            <img src="images/logo.png" alt="logo" class="fl">
+            <div class="fl">
+                <input type="text" placeholder="请输入关键字">
+                <p>搜索</p>
+            </div>
+            <p class="fl tousu">
+                <i class="iconfont icon-dianhua"></i>
+                <span>客户投诉电话</span>
+                <span>400-650-9988</span>
+            </p>
+            <p class="fl kefu">
+                <i class="iconfont icon-kefu"></i>
+                <span>欢迎使用</span>
+                <span>在线客服</span>
+            </p>
+            <ul class="clearfix frequentWord">
+                <li>桔贝合剂</li>
+                <li>感冒灵颗粒</li>
+                <li>肤痔清软膏</li>
+                <li>达芙文</li>
+                <li>爱乐维</li>
+                <li>五子衍宗丸</li>
+            </ul>
+        </div>
+    </header>
+    <nav style="height:50px;width:100%;background:#086AB3;"></nav>
+    <!-- 回到顶部 start-->
+    <div class="toolbar-wrap">
+        <div class="toolbar">
+            <!--右边内容 start-->
+            <div class="toolbar-panels J-panel">
+                <!--- 我的账户 -->
+                <div style="visibility: hidden; z-index: -1;" class="toolbar-panel tbar-panel-myAccount">
+                    <h1 class="title"><i class="iconfont icon-gerenzhongxin"></i>我的账户<a href="javascript:void(0);"
+                            class="iconfont icon-msnui-close"></a></h1>
+                    <dl>
+                        <dt><a href="/c/user/user_Center" target="_blank"><img id="r_tou"
+                                    src="//img.yaofang.cn/image1/common/default/default_img.jpg" title="" alt=""><span>
+                                    <p id="r_name">药房网用户</p><br>，您好！
+                                </span></a></dt>
+                        <dd class="l1">
+                            <span>会员级别：<b id="r_ji">普通会员</b></span>
+                            <span>我的积分：<b id="r_point">0</b>分</span>
+                        </dd>
+                        <!--
+                <dd class="l2">
+                    <span>资料完成：</span>
+                    <span class="process"><i></i></span>
+                    <span class="green" id="r_status">0%</span>
+                </dd>
+                -->
+                    </dl>
+                    <ul>
+                        <li><a href="/c/user/user_Order" target="_blank"><i
+                                    class="iconfont icon-wodedingdan"></i><b>我的订单</b></a></li>
+                        <li><a href="/c/user/user_Bonus" target="_blank"><i
+                                    class="iconfont icon-wodeyouhuiquan"></i><b>我的优惠券</b></a></li>
+                        <li><a href="/c/user/user_Deposit" target="_blank"><i
+                                    class="iconfont icon-wodeyucunkuan"></i><b>我的预存款</b></a></li>
+                        <li><a href="//bbs.yaofang.cn/" target="_blank"><i
+                                    class="iconfont icon-shequ-in"></i><b>健康社区</b></a></li>
+                        <li><a href="/c/channel/index/jbpd" target="_blank"><i
+                                    class="iconfont icon-yaopin"></i><b>疾病频道</b></a></li>
+                    </ul>
+                </div>
+                <!--- 需求清单 -->
+                <div style="visibility: hidden; z-index: -1;" class="toolbar-panel tbar-panel-cart">
+                    <h1 class="title">
+                        <i class="iconfont icon-biaodan"></i>需求清单<a href="javascript:void(0);"
+                            class="iconfont icon-msnui-close"></a>
+                    </h1>
+                    <div class="noLogin">还没有登录，登录后商品将被保存 <a herf="" onclick="showLogin()">登录</a></div>
+                    <div class="scroll" id="ajaxCarts">
+                        <div class="con suit">
+                            <h2 class="mendian">仁和药房网（北京）医药科技有限公司第八药房<div class="jSelfLogo"><span
+                                        class="jSelfTitle">自营</span></div>
+                            </h2>
+                            <dl>
+                                <dt><a href="//www.yaofang.cn/goods-1073398-613.html" target="_blank"><img
+                                            src="//img.yaofang.cn/images0/90/52/53/9052536d35de768b89d5a75c7984d96c0b8aa712.jpg"></a>
+                                </dt>
+                                <dd><span><a href="//www.yaofang.cn/goods-1073398-613.html"
+                                            target="_blank"><b>善存小佳维咀嚼片（香甜柠檬味）</b><i>78g(1.95g*40片)/盒</i></a></span><strong>￥52.00<i>×1</i></strong><a
+                                        href="javascript:delCG(9545584);"
+                                        class="iconfont icon-iconfontshanchu rihgtNav_Cart_delete"></a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!---无记录-->
+                    <div class="noRecord" style="display: none;">
+                        <i class="iconfont icon-gouwuche2"></i>
+                        <p>需求清单空空的，赶快去挑选心仪的商品吧~<a href="/">去首页看看</a></p>
+                    </div>
+                    <div class="count">
+                        <span><i>1</i>件商品<b>共计：<i id="rightSusum">52.00</i></b></span>
+                        <a href="/c/carts" class="confirm_btn1">下一步</a>
+                    </div>
+                </div>
+                <script type="text/javascript" src="//js.yaofang.cn/pc/layer/layer.js?v=201901301523"></script>
+                <script type="text/javascript" src="//js.yaofang.cn/pc/jquery.lazyload.min.js?v=201901301523"></script>
+                <!--- 我的关注 -->
+                <div style="visibility: hidden; z-index: -1;" data-name="follow"
+                    class="toolbar-panel tbar-panel-follow">
+                    <h1 class="title"><i class="iconfont icon-shoucang"></i>我的关注<a href="javascript:void(0);"
+                            class="iconfont icon-msnui-close"></a></h1>
+                    <div class="tab_menu hd">
+                        <ul>
+                            <li class="on"><a href="javascript:;">商品</a></li>
+                            <li class=""><a href="javascript:;">分店</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_box bd">
+                        <!---商品-->
+                        <div class="list_common" style="display: block;">
+                            <div class="content">
+                                <div class="list_height" id="r_goods">
+                                    <div class="noRecord" style="display: none;"><img
+                                            src="//img.yaofang.cn/pc/noRecord_logo.png">
+                                        <p>还没有关注商品哦~<a href="/c">去首页看看</a></p>
+                                    </div>
+                                </div>
+                                <p><a href="/c/user/user_Collection" target="_blank">查看更多关注商品 》</a></p>
+                            </div>
+                        </div>
+                        <!---旗舰店-->
+                        <div class="list_common flagShipStore" style="display: none;">
+                            <div class="content">
+                                <div class="list_height" id="r_dealer">
+                                    <div class="noRecord" style="display: none;"><img
+                                            src="//img.yaofang.cn/pc/noRecord_logo.png">
+                                        <p>还没有关注门店哦~<a href="/c">去首页看看</a></p>
+                                    </div>
+                                </div>
+                                <p><a href="/c/user/user_Collection" target="_blank">查看更多关注分店 》</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- 最近浏览 -->
+                <div style="visibility: hidden; z-index: -1;" class="toolbar-panel tbar-panel-recentBrowsing">
+                    <h1 class="title"><i class="iconfont icon-zuijinfangwen"></i>最近浏览<a href="javascript:void(0);"
+                            class="iconfont icon-msnui-close"></a></h1>
+                    <div class="overflow">
+                        <div class="content">
+                            <div class="list_height" id="r_history">
+                                <dl>
+                                    <dt><span><a href="/goods-1073398-613.html"
+                                                target="_blank">善存小佳维咀嚼片（香甜柠檬味）</a></span><strong></strong></dt>
+                                    <dd><a href="/goods-1073398-613.html" target="_blank"><img
+                                                src="//img.yaofang.cn/images0/90/52/53/9052536d35de768b89d5a75c7984d96c0b8aa712.jpg"
+                                                title="善存小佳维咀嚼片（香甜柠檬味）" alt="善存小佳维咀嚼片（香甜柠檬味）"></a><span><b>￥52.00</b><a
+                                                href="/goods-1073398-613.html" target="_blank"
+                                                class="r_addhis">查看详情</a></span></dd>
+                                </dl>
+                                <dl>
+                                    <dt><span><a href="/goods-1020072-611.html"
+                                                target="_blank">儿童止痒凝露</a></span><strong></strong></dt>
+                                    <dd><a href="/goods-1020072-611.html" target="_blank"><img
+                                                src="//img.yaofang.cn/images0/8d/78/8b/8d788b02b72b72f18758a52f22c267378589bd12.jpg"
+                                                title="儿童止痒凝露" alt="儿童止痒凝露"></a><span><b>￥16.00</b><a
+                                                href="/goods-1020072-611.html" target="_blank"
+                                                class="r_addhis">查看详情</a></span></dd>
+                                </dl>
+                                <dl>
+                                    <dt><span><a href="/goods-1002867-611.html"
+                                                target="_blank">越星牌洗必泰碘消毒液</a></span><strong></strong></dt>
+                                    <dd><a href="/goods-1002867-611.html" target="_blank"><img
+                                                src="//img.yaofang.cn/images0/0a/eb/dd/0aebdd71eb3a89be51e6088d13200ae2bac584b0.jpg"
+                                                title="越星牌洗必泰碘消毒液" alt="越星牌洗必泰碘消毒液"></a><span><b>￥6.00</b><a
+                                                href="/goods-1002867-611.html" target="_blank"
+                                                class="r_addhis">查看详情</a></span></dd>
+                                </dl>
+                                <dl>
+                                    <dt><span><a href="/goods-1000885-611.html"
+                                                target="_blank">洗得宝牌碘伏消毒液</a></span><strong></strong></dt>
+                                    <dd><a href="/goods-1000885-611.html" target="_blank"><img
+                                                src="//img.yaofang.cn/images0/6d/36/c8/6d36c8f9c3308007fc92b8450aff4f932bb48e29.jpg"
+                                                title="洗得宝牌碘伏消毒液" alt="洗得宝牌碘伏消毒液"></a><span><b>￥4.30</b><a
+                                                href="/goods-1000885-611.html" target="_blank"
+                                                class="r_addhis">查看详情</a></span></dd>
+                                </dl>
+                                <dl>
+                                    <dt><span><a href="/goods-1091160-892.html"
+                                                target="_blank">赖氨酸磷酸氢钙颗粒</a></span><strong></strong></dt>
+                                    <dd><a href="/goods-1091160-892.html" target="_blank"><img
+                                                src="//img.yaofang.cn/images0/goods/42/85/c7/th_1707.jpg"
+                                                title="赖氨酸磷酸氢钙颗粒" alt="赖氨酸磷酸氢钙颗粒"></a><span><b>￥314.00</b><a
+                                                href="/goods-1091160-892.html" target="_blank"
+                                                class="r_addhis">查看详情</a></span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边内容 end-->
+            <!--左边内容 上 start-->
+            <div class="toolbar-tabs J-tab">
+                <div class="toolbar-tab tbar-tab-myAccount">
+                    <i class="iconfont icon-gerenzhongxin"></i>
+
+                    <em class="tab-text">我的帐户</em><em class="tab-text">我的帐号</em></div>
+                <div class="toolbar-tab tbar-tab-cart" id="shopCart">
+                    <a href="javascript:void(0);" onclick="getRightCart()">
+                        <div class="message_list">
+                            <i class="iconfont icon-biaodan"></i>
+                            <div class="txt">需求清单</div>
+                            <span class="cart_num">1</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="toolbar-tab tbar-tab-follow">
+                    <i class="iconfont icon-shoucang"></i>
+
+                    <em class="tab-text">我的关注</em><em class="tab-text">我的关注</em><em class="tab-text">我的关注</em></div>
+                <div class="toolbar-tab tbar-tab-recentBrowsing">
+                    <i class="iconfont icon-zuijinfangwen"></i>
+
+                    <em class="tab-text">最近浏览</em><em class="tab-text">最近浏览</em></div>
+                <!--临时客服 start-->
+                <div class="toolbar-tab">
+                    <a href="javascript:;"
+                        onclick="_MEIQIA('showPanel',{groupToken:'b5d4fa04d4909d01f8c9120bba5f53d7'})">
+                        <i class="iconfont icon-kefu1"></i><em class="footer-tab-text footer-feedback">客服</em>
+                    </a>
+                </div>
+                <!--临时客服 end-->
+                <div class="toolbar-tab">
+                    <a href="//bbs.yaofang.cn/" target="_blank">
+                        <i class="iconfont icon-shequ-out"></i><em class="tab-text">健康社区</em>
+                    </a>
+                </div>
+                <div class="toolbar-tab">
+                    <a href="/c/channel/index/jbpd" target="_blank">
+                        <i class="iconfont icon-yaowan"></i><em class="tab-text">疾病频道</em>
+                    </a>
+                </div>
+            </div>
+            <!--左边内容 上 end-->
+            <!--左边内容 下 start-->
+            <div class="toolbar-footer">
+                <div class="toolbar-tab tbar-tab-top">
+                    <a href="#">
+                        <i class="iconfont icon-xiangshang"></i>
+                        <em class="footer-tab-text">顶部</em>
+                    </a>
+                </div>
+                <div class="toolbar-tab tbar-tab-erweima">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-erweima"></i>
+                    </a>
+                    <div class="qrcode" style="display: none;">
+                        <dl>
+                            <dt>访问Wap站</dt>
+                            <dd><img src="//img.yaofang.cn/pc/wap_twoDim.jpg?v=201901301523" alt=""></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="toolbar-tab">
+                    <a href="https://wj.qq.com/s/2682324/bd03" target="_blank">
+                        <i class="iconfont icon-yijian"></i>
+                        <em class="footer-tab-text">反馈</em>
+                    </a>
+                </div>
+            </div>
+            <!--左边内容 下 end-->
+        </div>
+    </div>
+    <!-- 回到顶部 end -->
+
+    <main class="clearfix">
+        <div class="bigBox clearfix container">
+            <!-- 详情页导航条 -->
+            <div class="drugInfo">
+            </div>
+            <!-- 商品详情 -->
+            <div class="sideleft fl">
+                <!-- 放大镜 -->
+                <div class="containerBig">
+                    <div class="t_container">
+                        <div class="jqzoom">
+                            <!-- <img src="images/g1.jpg" jqimg="images/g1.jpg" /> -->
+                        </div>
+                    </div>
+                    <div class="b_container">
+                        <img src="images/g1.jpg" />
+                        <img src="images/g2.jpg" />
+                        <img src="images/g3.jpg" />
+                        <img src="images/g4.jpg" />
+                        <img src="images/g5.jpg" />
+                    </div>
+                </div>
+                <!-- 商品编码 -->
+                <div class="comCodCol">
+                    <h1>商品编码：<span id="bianma">1073398</span></h1>
+                    <ul>
+                        <li><a href="javascript:;"><i class="iconfont icon-shoucang"></i>收藏</a> </li>
+                        <li class="share_click">
+                            <a href="javascript:;"><i class="iconfont icon-dianpufenxiang"></i>分享<b
+                                    class="iconfont icon-sanjiaoxing-copy"></b></a>
+                            <div class="share_con " style="display: none;">
+                                <div class="bdsharebuttonbox bdshare-button-style0-24" data-bd-bind="1554976692304">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                                    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desc">
+                    <div class="branddesc">
+                        <p><span>郑重声明：</span>尊敬的顾客，药房网受各门店委托为其发布药品信息。您的用药需求信息提交后，将由离您较近的药房网门店为您提<a
+                                class="more iconfont icon-xiala">全部</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="middle_property fl">
+                <div class="info">
+                    <!-- <h1>善存小佳维咀嚼片（香甜柠檬味）</h1>
+                    <input type="hidden" id="names" value="善存小佳维咀嚼片（香甜柠檬味）">
+                    <p>
+                        规 格： 78g(1.95g*40片)&nbsp;/&nbsp;盒<br>
+                        商品编码：1073398<br>
+                        <input type="hidden" id="gids" value="1073398">
+                        批准文号：<a href="http://app1.sfda.gov.cn/datasearch/face3/dir.html">国食健字G20110254</a><br>
+                        生产厂家：<a style="color: #0c69ae;" href="/c/search?s_words=惠氏制药有限公司">惠氏制药有限公司</a><br>
+                    </p> -->
+                    <!-- <dl> -->
+                    <!-- <dt>
+                            <span>会 员 价：</span><strong>￥52.00</strong>
+                            <input type="hidden" id="price" value="52.00">
+                        </dt> -->
+                    <!-- <dd> -->
+                    <div class="goodsPrice">
+                        <span class="sales">会员价:</span><br>
+                        <span>促销信息：</span>
+                        <b><i>包邮</i>购买本店商品满99元免基础配送费，偏远地区除外</b>
+                    </div>
+
+                </div>
+                <div class="select">
+
+                    <dl>
+                        <dt>数 量：</dt>
+                        <dd>
+                            <div class="num">
+                                <span class="minus">-</span>
+                                <input class="am-num-text" id="numInp" type="text" value="1"
+                                    onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                    onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                <span class="plus">+</span>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <a href="javascript:;" class="confirm_btn1 btnCart" id="add_cart"><i
+                        class="iconfont icon-gouwuche2"></i>加入需求清单</a>
+                <div id="flyItem" class="fly_item"><img
+                        src="//img.yaofang.cn/images0/90/52/53/9052536d35de768b89d5a75c7984d96c0b8aa712.jpg" width="40"
+                        height="40"></div>
+            </div>
+            <div class="right_property">
+                <img src="images/sideright.png" alt="">
+            </div>
+    </main>
+</body>
+
+</html>

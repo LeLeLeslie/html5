@@ -1,0 +1,33 @@
+main{
+    width: 100%;
+    background: #f8fcff;
+    .register {
+        border: 1px solid #acd4f1;
+        padding: 40px 0 60px 100px;
+        li{
+            span{
+                // display: inline-block
+                width:110px;
+            }
+        }
+        .valContent {
+            .registerBtn input {
+                width: 300px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 18px;
+                background: #1d8bd7;
+                text-align: center;
+                color: #fff;
+                display: inline-block;
+                line-height: 32px;
+                font-size: 12px;
+                // margin-left: -80px;
+            }
+        }
+        .error_msg{
+            display: none;
+        }
+    }
+    
+}

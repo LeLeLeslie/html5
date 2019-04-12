@@ -1,0 +1,59 @@
+.register {
+  background: #f8fcff;
+  border: 1px solid #acd4f1;
+  padding: 40px 0 60px 100px; }
+  .register h1 {
+    padding: 0 30px;
+    border-bottom: 2px solid #ccc;
+    line-height: 40px;
+    height: 40px;
+    margin-bottom: 45px;
+    margin-right: 100px; }
+    .register h1 span {
+      color: #0c69ae;
+      font-size: 18px;
+      border-bottom: 2px solid #0c69ae;
+      display: inline-block; }
+  .register .valContent ul li {
+    margin-bottom: 10px; }
+/*    .register .valContent ul li span {
+      margin-right: 20px; }
+      .valContent ul li span {
+    width: 130px;
+    margin-right: 10px;
+    float: left;
+    text-align: right;
+}
+.Validform_wrong {
+    visibility: hidden;
+}
+.register .valContent ul li {
+    margin-bottom: 10px;
+}
+.Validform_wrong {
+    visibility: hidden;
+}*/
+    .register .valContent ul li .text1 {
+      width: 350px;
+      background: #fff;
+      border: 1px solid #e9e9e9;
+      line-height: 40px;
+      height: 40px;
+      border-color: #cfcfcf;
+      float: left; }
+    .register .valContent ul li .w125 {
+      width: 125px; }
+    .register .valContent ul li .smsVer {
+      line-height: 40px;
+      height: 40px; }
+    .register .valContent ul li .imgVer img {
+      margin-top: 0;
+      height: 40px; }
+  .register .valContent .btn {
+    margin-top: 30px;
+    margin-left: 150px; }
+    .register .valContent .btn input {
+      width: 300px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px; }

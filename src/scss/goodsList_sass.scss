@@ -327,16 +327,17 @@ aside{
             &.up span{
                 background: url(//img.yaofang.cn/pc/fold_icon.jpg?v=201701) no-repeat right top;
             }
+        }
         dd{
             padding-left:40px;
             border-left:1px solid #ccc;
             display: none;
             border-right:1px solid #ccc;
-        }
-        a{
-            display: block;
-            font-size:12px;
-            line-height: 30px;
+            a{
+                display: block;
+                font-size:12px;
+                line-height: 30px;
+            }
         }
     }
     /*浏览记录*/
@@ -364,8 +365,7 @@ aside{
             b,i{
                 display:block;text-align: center;margin-bottom:10px;}
             }
-        
-    }
+        }
     /*品牌图片*/
     .brandIMG{
         width: 100%;
@@ -427,11 +427,70 @@ section{
             
         }
     }
+    .classifyBanner{margin-bottom:40px;}
     .classifySort{
+        margin-bottom:40px;
         border:1px solid #ccc;
         span{
-            height: 60px;
+            line-height: 60px;
+            padding:0px 20px;
+            border-right: 1px solid #ccc;
             display: inline-block;
+            font-size: 12px;
+        }
+    }
+    .classifyDrugsList{
+        a{
+            display: inline-block;
+            width: 25%;
+            li{
+                div{
+                    height: 150px;
+                    width: 250px;
+                    img{
+                        height: 150px;
+                        width: 210px;
+                    }
+                }
+                p{
+                    width: 100%;
+                    text-align: left;
+                    padding-left: 30px;
+                    margin:10px 0px;
+                    font-size: 12px;
+                    span{
+                        display: inline-block;
+                        border:1px solid #ccc;
+                        line-height: 30px;
+                        text-align: center;
+                        margin-left: -1px;
+                        color:red;
+                        &:first-child{width: 50px;}
+                        &:last-child{width: 80px;}
+                    }
+                    .borderRed{border:1px solid red;}
+                }
+            }
+        }
+        .highBorder{
+            border:1px solid #ccc;
+        }
+        
+    }
+    .classifyPage{
+        span{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            border:1px solid #086AB3;
+            margin:10px;
+        }
+        .active{
+            background: #086AB3;
+            color:#fff;
         }
     }
 }

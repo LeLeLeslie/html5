@@ -374,10 +374,6 @@ aside .classifyFolder dt.up span {
   background: url(//img.yaofang.cn/pc/fold_icon.jpg?v=201701) no-repeat right top;
 }
 
-aside .classifyFolder dt.up dd a {
-  color: red;
-}
-
 aside .classifyFolder dd {
   padding-left: 40px;
   border-left: 1px solid #ccc;
@@ -385,7 +381,7 @@ aside .classifyFolder dd {
   border-right: 1px solid #ccc;
 }
 
-aside .classifyFolder a {
+aside .classifyFolder dd a {
   display: block;
   font-size: 12px;
   line-height: 30px;
@@ -491,4 +487,85 @@ section .classifySelect .selectList dd ul > li {
 
 section .classifySelect .selectList .highRed {
   color: red;
+}
+
+section .classifyBanner {
+  margin-bottom: 40px;
+}
+
+section .classifySort {
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+}
+
+section .classifySort span {
+  line-height: 60px;
+  padding: 0px 20px;
+  border-right: 1px solid #ccc;
+  display: inline-block;
+  font-size: 12px;
+}
+
+section .classifyDrugsList a {
+  display: inline-block;
+  width: 25%;
+}
+
+section .classifyDrugsList a li div {
+  height: 150px;
+  width: 250px;
+}
+
+section .classifyDrugsList a li div img {
+  height: 150px;
+  width: 210px;
+}
+
+section .classifyDrugsList a li p {
+  width: 100%;
+  text-align: left;
+  padding-left: 30px;
+  margin: 10px 0px;
+  font-size: 12px;
+}
+
+section .classifyDrugsList a li p span {
+  display: inline-block;
+  border: 1px solid #ccc;
+  line-height: 30px;
+  text-align: center;
+  margin-left: -1px;
+  color: red;
+}
+
+section .classifyDrugsList a li p span:first-child {
+  width: 50px;
+}
+
+section .classifyDrugsList a li p span:last-child {
+  width: 80px;
+}
+
+section .classifyDrugsList a li p .borderRed {
+  border: 1px solid red;
+}
+
+section .classifyDrugsList .highBorder {
+  border: 1px solid #ccc;
+}
+
+section .classifyPage span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #086AB3;
+  margin: 10px;
+}
+
+section .classifyPage .active {
+  background: #086AB3;
+  color: #fff;
 }

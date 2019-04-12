@@ -1,0 +1,53 @@
+@charset "utf-8";
+body{ font-size:14px;font-family:'Microsoft Yahei', Tahoma, Helvetica, 'SimSun', sans-serif;color:#5b5b5b;}
+img{border:none;width: auto;}
+input,textarea{outline:none;border:none;background:none;font-size: 14px;}
+textarea{resize:none;}
+a{text-decoration:none;color: #5b5b5b;}
+a:hover{ text-decoration:none; color:#0c69ae;}
+*{ margin:0; padding:0; list-style:none; border:0;}
+ol, ul{ list-style: none outside none;}
+i,em{ font-style:normal;}
+td{font-size: 12px;}
+h1,h2,h3,h4,h5{font-weight: normal;font-size: 14px;}
+strong{font-weight: normal;}
+
+select{
+    font-family: "microsoft yahei";
+    line-height: 30px;height:30px;background: #fff;border-radius: 0;font-size: 14px;
+    border: 0;
+    outline: 1px solid #b8d2e3;
+}
+
+
+.Validform_checktip{float: left;margin-left: 20px;color: #999;font-size: 12px;}
+.Validform_wrong{color: #f00;}
+.Validform_right{color:#71b83d;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none; 
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+/*自营标识样式*/
+.jSelfLogo {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.jSelfLogo .jSelfTitle {
+    line-height: 30px;
+    color: #fff;
+    background: url(//img.yaofang.cn/pc/zyimg.png) no-repeat left center;
+    background-size: 100% 70%;
+    width: auto;
+    padding: 0 6px;
+    text-align: center;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    font-size: 12px;
+    width: auto!important;
+}

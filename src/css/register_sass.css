@@ -1,0 +1,30 @@
+main {
+  width: 100%;
+  background: #f8fcff;
+}
+
+main .register {
+  border: 1px solid #acd4f1;
+  padding: 40px 0 60px 100px;
+}
+
+main .register li span {
+  width: 110px;
+}
+
+main .register .valContent .registerBtn input {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  background: #1d8bd7;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  line-height: 32px;
+  font-size: 12px;
+}
+
+main .register .error_msg {
+  display: none;
+}

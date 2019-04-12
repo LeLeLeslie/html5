@@ -108,14 +108,14 @@ jQuery(function($){
     //3. 定义useRender
     function useRender(arr,parent){
         arr.map(function(item,idx){
-            let $li = $('<li/>').appendTo(parent).text(item.use).css({
+            let $li = $('<li/>').appendTo(parent).text(item.diseaseType).css({
                 "width":"50%",
                 "float":"left",
                 "text-align":"center",
                 "line-height":"55px",
                 // "border":"1px solid #ccc",
             });
-            // console.log($li,parent);
+            // console.log($li,item.diseaseType);
         })
     }
     //定义brandImgRender
