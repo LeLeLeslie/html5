@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="css/goodsList_sass.css">
     <link rel="shortcut icon" href="images/g3.jpg">
     <script src="lib/jquery-3.0.0.min.js"></script>
-    <script src="js/goodsList.js"></script>
+    <script src="lib/common.js"></script>
+    <script src="lib/jquery.cookie.js"></script>
+    <!-- <script src="js/details.js"></script> -->
+    <script src="js/shoppingCart.js"></script>
     <title>【仁和药房网】正规网上药店专业药品零售网,网上买药就上药房网!</title>
 </head>
 
@@ -42,8 +45,8 @@
         <div id="topNav">
             <div class="topNav clearfix container">
                 <ul class="list clearfix">
-                    <li class="fl">请登陆</li>
-                    <li class="fl">注册</li>
+                    <li class="fl user">请登陆</li>
+                    <li class="fl register">注册</li>
                     <li class="fl myweb">我的药房网<i class="iconfont icon-xiangshang"></i>
                     </li>
                     <li class="fl"><i class="iconfont icon-qingdan"></i>需求清单</li>
@@ -314,7 +317,7 @@
                             <!-- <input name="goodsRecId" type="hidden" value="9546077">
                             <input name="goodsIsBuy" type="hidden" value="1">
                             <input name="goodsStock" type="hidden" value="1"> -->
-                            <div class="top list last" style="margin-left: 0;">
+                            <!-- <div class="top list last" style="margin-left: 0;">
                                 <div class="check">
                                     <input type="checkbox" class="Each " name="checkItem" checked="true">
                                 </div>
@@ -341,7 +344,7 @@
                                 <div class="totle">314.00</div>
                                 <div class="available">有货</div>
                                 <a class="del">删除</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!--单品 end-->
@@ -354,7 +357,8 @@
                 <div class="foot"
                     style="position: relative; bottom: auto; margin-bottom: 40px; margin-left: auto; margin-right: auto; border: none; width: 1158px;">
                     <div class="cash confirm_btn1"><a href="/c/user/login?go=/c/carts/carts">下一步</a></div>
-                    <div class="tol"><span>共 <b id="number">1</b> 件商品</span><span>优惠：<b
+                    <div class="tol">
+                        <span>共 <b id="number">1</b> 件商品</span><span>优惠：<b
                                 id="save">￥0.00</b></span><span>总计（不含配送服务费）:<i>￥</i><b id="susum">314.00</b></span>
                     </div>
                 </div>
