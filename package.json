@@ -1,7 +1,6 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "directories": {
     "doc": "doc"
@@ -27,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/LeLeLeslie/html5/issues"
   },
-  "homepage": "https://github.com/LeLeLeslie/html5#readme"
+  "homepage": "https://github.com/LeLeLeslie/html5#readme",
+  "description": ""
 }
