@@ -12,12 +12,17 @@
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/head_sass.css">
     <link rel="stylesheet" href="css/index_sass.css">
+    <link rel="stylesheet" href="css/details_sass.css">
+    <link rel="stylesheet" href="lib/toolbar.css">
     <!-- <link rel="shortcut icon" type="images/x-icon" href="https://www.yaofang.cn/favicon.ico"> -->
     <link rel="shortcut icon" href="images/g3.jpg">
     <link rel="stylesheet" href="lib/swiper.min.css">
     <script src="lib/jquery-3.0.0.min.js"></script>
     <script src="js/head.js"></script>
+    <script src="lib/common.js"></script>
+    <script src="lib/jquery.cookie.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/details.js"></script>
     <script src="lib/swiper.min.js"></script>
     <title>【仁和药房网】正规网上药店专业药品零售网,网上买药就上药房网!</title>
 </head>
@@ -174,7 +179,7 @@
             </div>
             <div class="fl classify">
                 <ul>
-                    <li>首页</li>
+                    <li class="indexPage">首页</li>
                     <li>新药特药进口药</li>
                     <li>慈善援助</li>
                     <li>慢性疾病</li>
@@ -316,6 +321,46 @@
             </div>
         </div>
     </nav>
+    <!-- 购物车 start-->
+    <div class="toolbar-wrap">
+        <div class="toolbar">
+            <!--左边内容 上 start-->
+            <div class="toolbar-tabs J-tab">
+                <!-- <div class="toolbar-tab tbar-tab-myAccount">
+                        <i class="iconfont icon-gerenzhongxin"></i>
+                        <em class="tab-text">我的帐户</em><em class="tab-text">我的帐号</em></div>
+                    <div class="toolbar-tab tbar-tab-cart" id="shopCart"> -->
+                <!-- <a href="javascript:void(0);" onclick="getRightCart()"> -->
+                <a>
+                    <div class="message_list">
+                        <i class="iconfont icon-biaodan"></i>
+                        <div class="txt">我的购物车</div>
+                        <span class="cart_num"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--左边内容 上 end-->
+        <!--左边内容 下 start-->
+        <div class="toolbar-footer">
+            <div class="toolbar-tab tbar-tab-top">
+                <a>
+                    <i class="iconfont icon-xiangshang" style="transform: rotate(180deg);"></i>
+                    <em class="footer-tab-text">顶部</em>
+                </a>
+            </div>
+        </div>
+        <!--左边内容 下 end-->
+        <!-- 右边内容 start -->
+        <div class="rightArea">
+            <ul></ul>
+            <div class="totalPrice">
+                <span class="totalPrice_s"></span>
+                <a href="html/shoppingCart.html">下一步</a>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车 end -->
     <div class="banner clearfix">
         <ul class="carousel clearfix">
             <li><img src="images/banner1.jpg" alt="轮播图1"></li>
@@ -650,30 +695,30 @@
                     </ul>
                 </div>
             </div>
-                <div>
-                    <ul class="webList clearfix">
-                        <li>友情链接:</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>健康网</li>
-                        <li>⬇</li>
-                    </ul>
-                </div>
+            <div>
+                <ul class="webList clearfix">
+                    <li>友情链接:</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>健康网</li>
+                    <li>⬇</li>
+                </ul>
             </div>
+        </div>
     </main>
 </body>
 

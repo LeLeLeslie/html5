@@ -32,7 +32,7 @@ jQuery(function ($) {
         init = begin ? begin : 0;
         // console.log(init,begin);
         for (let i = init; i < num; i++) {
-            var $a = $('<a/>').appendTo(parent).attr("href", "html/goodsList.html").css({
+            var $a = $('<a/>').appendTo(parent).attr("href", "html/details.html?guid="+res[i].guid).css({
                 "display":"inline-block",
             });
             var $li = $('<li/>').appendTo($a).attr("guid", res[i].guid);
@@ -334,7 +334,34 @@ jQuery(function ($) {
             }, 500);
         }
     })
-
+    //跳转列表页
+    //1)
+    $(".classify").on("mouseover","li",function(){
+        $(this).css({"cursor":"pointer"})
+    })
+    .on("click","li",function(){
+        if(!$(this).hasClass("indexPage")){
+            location.href="html/goodsList.html";
+        }
+    })
+    //2)
+    $(".brandName").on("mouseover","li",function(){
+        $(this).css({"cursor":"pointer"})
+    })
+    .on("click","li",function(){
+        if(!$(this).hasClass("indexPage")){
+            location.href="html/goodsList.html";
+        }
+    })
+    //3)
+    $(".use").on("mouseover","li",function(){
+        $(this).css({"cursor":"pointer"})
+    })
+    .on("click","li",function(){
+        if(!$(this).hasClass("indexPage")){
+            location.href="html/goodsList.html";
+        }
+    })
 
 
 

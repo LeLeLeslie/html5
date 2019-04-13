@@ -18,14 +18,90 @@
     <script src="lib/jquery-3.0.0.min.js"></script>
     <script src="lib/jquery-1.7.min.js"></script>
     <script src="lib/jquery.jqzoom-2.2.js" type="text/javascript"></script>
-    <link href="lib/base_glass.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="lib/base_glass.css" rel="stylesheet" type="text/css" /> -->
     <script src="lib/common.js"></script>
     <script src="lib/jquery.cookie.js"></script>
     <!-- <script src="js/index.js"></script> -->
+    <script src="lib/fangdajing.js"></script>
     <script src="js/details.js"></script>
     <script src="js/toolbar.js"></script>
     <title>【仁和药房网】正规网上药店专业药品零售网,网上买药就上药房网!</title>
 </head>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            list-style: none;
+        }
+        .magnify-box {
+            width: 450px;
+            height: 450px;
+            position: relative;
+        }
+        .min-img {
+            border: solid 1px #000;
+            width: 450px;
+            height: 450px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .min-img img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .max-img {
+            width: 355.50px;
+            height: 355.50px;
+            overflow: hidden;
+            position: absolute;
+            left: 452px;
+            top: 20px;
+            display: none;
+        }
+        .max-img img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .mask {
+            width: 200px;
+            position: absolute;
+            height: 200px;
+            left: 0;
+            top: 0;
+            background: rgba(0,0,0,.3);
+            display: none;
+        }
+        .img-list {
+            width: 450px;
+            height: 100px;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+        .img-list ul {
+            overflow: hidden;
+
+        }
+        .img-list ul li {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border-right: 1px solid #000;
+            border-left: solid 1px #000;
+            box-sizing: border-box;
+
+        }
+        .img-list ul li img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
 
 <body>
     <header>
@@ -159,7 +235,7 @@
         </div>
     </header>
     <nav style="height:50px;width:100%;background:#086AB3;"></nav>
-    <!-- 回到顶部 start-->
+    <!-- 购物车 start-->
     <div class="toolbar-wrap">
         <div class="toolbar">
             <!--左边内容 上 start-->
@@ -198,7 +274,7 @@
             </div>
         </div>
     </div>
-    <!-- 回到顶部 end -->
+    <!-- 购物车 end -->
 
     <main class="clearfix">
         <div class="bigBox clearfix container">
@@ -207,21 +283,10 @@
             </div>
             <!-- 商品详情 -->
             <div class="sideleft fl">
-                <!-- 放大镜 -->
+                <!-- 放大镜 start-->
                 <div class="containerBig">
-                    <div class="t_container">
-                        <div class="jqzoom">
-                            <!-- <img src="images/g1.jpg" jqimg="images/g1.jpg" /> -->
-                        </div>
-                    </div>
-                    <div class="b_container">
-                        <img src="images/g1.jpg" />
-                        <img src="images/g2.jpg" />
-                        <img src="images/g3.jpg" />
-                        <img src="images/g4.jpg" />
-                        <img src="images/g5.jpg" />
-                    </div>
                 </div>
+                <!-- 放大镜 end-->
                 <!-- 商品编码 -->
                 <div class="comCodCol">
                     <h1>商品编码：<span id="bianma">1073398</span></h1>
@@ -300,6 +365,7 @@
                 <img src="images/sideright.png" alt="">
             </div>
     </main>
+    <!-- <script src="../js/fangdajing.js"></script> -->
 </body>
 
 </html>

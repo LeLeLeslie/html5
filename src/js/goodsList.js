@@ -207,5 +207,11 @@ jQuery(function ($) {
         xhr.send(null);
         //点击页码跳转
     })
+    //回到首页
+    $(".classify").on("click","li",function(){
+        if($(this).hasClass("indexPage")){
+            location.href="index.html";
+        }
+    })
 
 })
