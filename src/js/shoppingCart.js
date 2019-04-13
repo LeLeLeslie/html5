@@ -1,4 +1,6 @@
-jQuery(function ($) {
+require(['config'],function(){
+    require(['jquery','swiper','jq_cookie','common','fangdajing','details','index','goodsList'],function($){
+jQuery(function ($,Swiper) {
     var xhr = new XMLHttpRequest();
     var status = [200, 304];
     xhr.onreadystatechange = function () {
@@ -84,13 +86,31 @@ jQuery(function ($) {
                     console.log("不删除");
                 }
             })
+            //4)全选
+            var flag_all=true;
+            $(".all").on("click",function(){
+                if(flag_all){
+                    console.log(1);
+                    $(".Each").prop("checked",false)
+                    $(".Each").parents('.goods_line').romoveClass("checked_bg");
+                    flag_all=false;
+                }
+                else{
+                    console.log(0);
+                    $(".Each").prop("checked",true)
+                    $(".Each").parents('.goods_line').addClass("checked_bg");
+                    flag_all=true;
+                }
+            })
         })
             //商品总价渲染
             var totalPrice = 0;
+            var totalNum=0;
             res.forEach(function (item, idx) {
                 totalPrice += item.price * item.qty;
+                totalNum += item.qty*1;
             })
-            $(".tol").get(0).innerHTML += `<span>共 <b id="number">${res.length}</b> 件商品</span><span>优惠：<b
+            $(".tol").get(0).innerHTML += `<span>共 <b id="number">${totalNum}</b> 件商品</span><span>优惠：<b
             id="save">￥0.00</b></span><span>总计（不含配送服务费）:<i>￥</i><b id="susum">${totalPrice}</b></span>`
         }
     }
@@ -129,7 +149,8 @@ jQuery(function ($) {
 
 })
 
-
+    })
+});
  //购物车渲染封装
     // function cartRender(data) {
     //     $(".goods_line").get(0).html = '';

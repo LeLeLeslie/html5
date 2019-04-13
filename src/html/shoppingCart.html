@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="css/shoppingCart.css">
     <link rel="stylesheet" href="css/goodsList_sass.css">
     <link rel="shortcut icon" href="images/g3.jpg">
-    <script src="lib/jquery-3.0.0.min.js"></script>
+    <script src="lib/require.js" data-main="js/shoppingCart"></script>
+    <!-- <script src="lib/jquery-3.0.0.min.js"></script>
     <script src="lib/common.js"></script>
     <script src="lib/jquery.cookie.js"></script>
     <script src="js/details.js"></script>
-    <script src="js/shoppingCart.js"></script>
+    <script src="js/shoppingCart.js"></script> -->
     <title>【仁和药房网】正规网上药店专业药品零售网,网上买药就上药房网!</title>
 </head>
 
@@ -287,11 +288,12 @@
     <main class="clearfix">
         <div class="container">
             <div class="shopCart">
-                <div class="title1">我的需求清单<span>全部商品（<i
-                            id="allGnum">1</i>）</span><span>如您所选的商品中包含处方药，您加入需求清单以后，展示药品信息的门店药师会与您联系，并会提醒您在购买时所需要的处方单等相关资料。</span>
+                <div class="title1">我的需求清单
+                    <!-- <span>全部商品（<i id="allGnum">1</i>）</span> -->
+                            <span>如您所选的商品中包含处方药，您加入需求清单以后，展示药品信息的门店药师会与您联系，并会提醒您在购买时所需要的处方单等相关资料。</span>
                 </div>
                 <div class="title2">
-                    <span class="w1"><input type="checkbox" class="all">全选</span>
+                    <span class="w1"><input type="checkbox" class="all" checked="true">全选</span>
                     <span class="w2">商品信息</span>
                     <strong>单价</strong>
                     <strong>数量</strong>

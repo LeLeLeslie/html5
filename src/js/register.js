@@ -65,6 +65,7 @@ jQuery(function ($) {
                 url: "api/register2.php",
                 data: { "msg": "register", "info": $("#uname").val(), "pwd": $("#pwd").val() },
                 success: function (res) {
+                    // res=res.msg;
                     console.log(res);
                     if(res==1){
                         alert("注册成功！");
