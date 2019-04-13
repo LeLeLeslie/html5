@@ -207,7 +207,7 @@ jQuery(function ($) {
     //加入购物车
     $("#add_cart").on("click", function () {
         //判断是否登陆
-        if ($(".user").hasClass("login")) {
+        if ($.cookie("user")) {
             // 前端直接渲染
             // var prevNum = $(".cart_num").text() *1;
             // var curNum = prevNum + $("#numInp")[0].value*1;
@@ -224,11 +224,12 @@ jQuery(function ($) {
                     "qty": qty,
                 },
                 success:function (res) {
-                    res = JSON.parse(res).cartlist;
+                    res = JSON.parse(res).goodslist;
+                    console.log(res);
                     //显示购物车商品数量 //显示总价:
                     var total = 0;
                     var num = 0;
-                    res.map(function (item, idx) {
+                    res.forEach(function (item, idx) {
                         num += item.qty * 1;
                         total = total + item.qty*item.price;
                         console.log(total);
