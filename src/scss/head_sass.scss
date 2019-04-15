@@ -1,3 +1,7 @@
+ body{
+     width: 100%;
+     overflow-x: hidden;
+ }
  /*header样式*/
  /*top导航栏样式*/
  #topNav{
@@ -304,7 +308,7 @@ nav{
     width: 1920px;
     text-align: center;
     height: 424px;
-    // overflow: hidden;
+    overflow: hidden;
     .carousel{
         width: 11520px;
         height: 424px;

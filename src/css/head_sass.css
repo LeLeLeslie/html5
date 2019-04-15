@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /*header样式*/
 /*top导航栏样式*/
 #topNav {
@@ -335,6 +340,7 @@ nav .nav3 img:last-child {
   width: 1920px;
   text-align: center;
   height: 424px;
+  overflow: hidden;
 }
 
 .banner .carousel {
